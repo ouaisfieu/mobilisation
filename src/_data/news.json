@@ -1,0 +1,45 @@
+[
+  {
+    "date": "2026-11-06",
+    "title": "Le Roi doit se prononcer sur la démission de Bart De Wever",
+    "text": "Après une semaine de consultations des présidents de parti de la majorité, le Premier ministre est attendu au Palais ce vendredi à 10h30. Le Roi décidera alors d'accepter ou non la démission présentée le 2 novembre. Quelle que soit l'issue, un budget 2027 devra être bouclé dans les semaines qui viennent : c'est maintenant que les choix se font.",
+    "sources": ["rtbf-crise"],
+    "flash": true
+  },
+  {
+    "date": "2026-11-02",
+    "title": "Pas d'accord sur le budget : De Wever présente sa démission, le Roi la tient en suspens",
+    "text": "Les cinq partis de l'Arizona n'ont pas trouvé d'accord. Le blocage porte sur une question simple : qui doit contribuer davantage ? Vooruit, CD&V et Les Engagés plaident pour faire contribuer « les épaules les plus larges », N-VA et MR s'y opposent. Le Palais a jugé l'absence de budget « pas crédible ».",
+    "sources": ["vrt-crise", "bruzz-crise", "rtbf-crise"]
+  },
+  {
+    "date": "2026-10-29",
+    "title": "Inflation : 5,26 % en octobre, du jamais vu depuis avril 2023",
+    "text": "Portée par l'énergie (+33 % sur un an, électricité +23,7 %), l'inflation belge accélère : 3,97 % en août, 4,69 % en septembre, 5,26 % en octobre. Au même moment, des « adaptations de l'indexation » sont sur la table du gouvernement.",
+    "sources": ["businessam-inflation-oct", "te-inflation-oct", "21news-tva"]
+  },
+  {
+    "date": "2026-10-21",
+    "title": "Le front commun appelle à manifester le lundi 23 novembre",
+    "text": "CSC, FGTB et Synova appellent ensemble à une « grande mobilisation citoyenne » à Bruxelles et invitent mutualités, associations de lutte contre la pauvreté, organisations de jeunesse, mouvements environnementaux et féministes, acteurs culturels, étudiant·es et pensionné·es à les rejoindre.",
+    "sources": ["rtbf-23nov", "csc-23nov", "vrt-23nov"]
+  },
+  {
+    "date": "2026-10-15",
+    "title": "De Wever propose de geler toutes les indexations pendant un an",
+    "text": "Dans une note à ses partenaires, le Premier ministre propose un « filet de sécurité » : gel de toutes les dépenses de l'État et annulation pendant un an de l'indexation des allocations sociales, des allocations de chômage, des pensions, des salaires des fonctionnaires et du barème fiscal. La proposition n'a pas été adoptée à ce jour. Le même jour, la hausse de TVA est retirée « provisoirement » des discussions.",
+    "sources": ["rtbf-gel-index", "21news-tva"]
+  },
+  {
+    "date": "2026-10-14",
+    "title": "Enseignement : appel à une grande mobilisation le 17 novembre",
+    "text": "La FEF et les syndicats de l'enseignement préparent une journée de mobilisation à l'occasion de la Journée internationale des étudiant·es.",
+    "sources": ["dh-17nov", "bx1-17nov"]
+  },
+  {
+    "date": "2026-10-09",
+    "title": "« Pas dans nos poches ! » : 30 000 à 50 000 personnes dans la rue",
+    "text": "La manifestation nationale initiée par la FGTB et soutenue par la CSC a rassemblé 30 000 personnes selon la police, 50 000 selon la FGTB. Selon la police, un groupe d'environ un millier de casseurs a commis des dégradations en marge du cortège. Le même jour, la CSC portait les témoignages de travailleurs et travailleuses aux sièges des partis de la majorité : CD&V, Vooruit et Les Engagés les ont reçus, le président du MR a proposé un rendez-vous ultérieur, la N-VA ne les a pas reçus.",
+    "sources": ["rtbf-9oct", "csc-9oct"]
+  }
+]

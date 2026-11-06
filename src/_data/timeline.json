@@ -1,0 +1,290 @@
+[
+  {
+    "id": "1871-commune", "year": 1871, "date": "18 mars – 28 mai 1871", "scope": "monde", "themes": ["libertes"],
+    "title": "La Commune de Paris",
+    "text": "Pendant 72 jours, le peuple de Paris se gouverne lui-même : séparation de l'Église et de l'État, interdiction du travail de nuit des boulangers, réquisition des ateliers abandonnés. La Commune est écrasée lors de la « Semaine sanglante ».",
+    "result": "perdu",
+    "resultText": "Massacrée, la Commune devient un symbole mondial. Quinze ans plus tard, c'est en commémorant son anniversaire que démarre la révolte ouvrière de Liège.",
+    "lesson": "Les défaites laissent des mémoires qui nourrissent les luttes suivantes.",
+    "sources": ["wiki-commune"]
+  },
+  {
+    "id": "1886-wallonie", "year": 1886, "date": "18 – 29 mars 1886", "scope": "be", "themes": ["salaires", "temps"],
+    "title": "La révolte ouvrière de 1886",
+    "text": "Parti de Liège le 18 mars, le soulèvement embrase les bassins industriels wallons jusqu'au Hainaut. Crise, salaires en baisse, mécanisation : la colère explose. Le gouvernement envoie l'armée ; à Roux, près de Charleroi, la troupe tire sur les grévistes. On compte plusieurs dizaines de morts.",
+    "result": "partiel",
+    "resultText": "Réprimée dans le sang, la révolte force pourtant l'État à ouvrir une grande enquête sur le travail. Suivent les premières lois sociales belges : salaires payés en argent (fin du « truck system ») et limitation du travail des enfants.",
+    "lesson": "Même vaincue sur le moment, une révolte peut obliger le pouvoir à légiférer.",
+    "sources": ["wiki-1886", "rtbf-roux"]
+  },
+  {
+    "id": "1886-haymarket", "year": 1886, "date": "1er – 4 mai 1886", "scope": "monde", "themes": ["temps"],
+    "title": "Chicago, Haymarket : naissance du 1er mai",
+    "text": "Aux États-Unis, des centaines de milliers de travailleurs font grève pour la journée de 8 heures, dont des dizaines de milliers à Chicago. Le 4 mai, une bombe explose lors d'un rassemblement à Haymarket ; une répression féroce s'abat, des militants anarchistes sont condamnés sur des preuves fragiles.",
+    "result": "differe",
+    "resultText": "En leur mémoire, l'Internationale fait du 1er mai la journée mondiale de lutte pour les 8 heures. La revendication sera gagnée pays par pays au XXe siècle — en Belgique, en 1921.",
+    "lesson": "Le 1er mai est né d'une défaite. Il a gagné ensuite, partout.",
+    "sources": ["wiki-haymarket"]
+  },
+  {
+    "id": "1893-suffrage", "year": 1893, "date": "12 – 18 avril 1893", "scope": "be", "themes": ["suffrage", "libertes"], "highlight": true,
+    "title": "La grève générale qui arrache le droit de vote",
+    "text": "À l'appel du jeune Parti ouvrier belge, environ 200 000 travailleurs cessent le travail pour exiger le suffrage universel, que le Parlement vient de refuser. Les affrontements avec l'armée font plusieurs morts.",
+    "result": "partiel",
+    "resultText": "En quelques jours, la Constitution est révisée : suffrage universel masculin, tempéré par le vote plural. Le corps électoral est multiplié par dix et les premiers députés socialistes entrent au Parlement en 1894.",
+    "lesson": "Ce sont des grévistes qui ont fait entrer les travailleurs dans la démocratie.",
+    "sources": ["wiki-1893"]
+  },
+  {
+    "id": "1902-suffrage", "year": 1902, "date": "avril 1902", "scope": "be", "themes": ["suffrage"],
+    "title": "1902 : la grève mal préparée",
+    "text": "Nouvelle grève générale, cette fois pour abolir le vote plural (« un homme, une voix »). Mal préparée, face à une alliance des catholiques et des libéraux, elle tourne à l'affrontement.",
+    "result": "perdu",
+    "resultText": "Échec : la réforme est bloquée, des grévistes sont tués et les syndicats perdent de nombreux membres.",
+    "lesson": "Sans préparation ni stratégie, le courage ne suffit pas.",
+    "sources": ["wiki-greves-be"]
+  },
+  {
+    "id": "1912-lawrence", "year": 1912, "date": "janvier – mars 1912", "scope": "monde", "themes": ["salaires", "egalite"],
+    "title": "Lawrence : « Du pain et des roses »",
+    "text": "À Lawrence (Massachusetts), plus de 20 000 ouvrières et ouvriers du textile, immigrés de dizaines de nationalités, se mettent en grève après une baisse de salaire. Leur slogan, « Du pain et des roses », fait le tour du monde.",
+    "result": "gagne",
+    "resultText": "Des hausses de salaire, bientôt étendues à toute l'industrie textile de la région.",
+    "lesson": "La diversité n'empêche pas l'unité : des dizaines de langues, une seule grève.",
+    "sources": ["wiki-lawrence"]
+  },
+  {
+    "id": "1913-suffrage", "year": 1913, "date": "14 – 24 avril 1913", "scope": "be", "themes": ["suffrage"],
+    "title": "1913 : la grève préparée pendant dix mois",
+    "text": "Le Parti ouvrier prépare la grève pendant dix mois : caisses de solidarité, épargne des familles, consignes de calme. Entre 300 000 et 450 000 grévistes cessent le travail, dans une discipline remarquable.",
+    "result": "differe",
+    "resultText": "Le gouvernement concède une commission chargée de réformer le droit de vote. La guerre retarde tout, mais le suffrage universel masculin pur et simple est instauré en 1919. Les femmes devront attendre 1948.",
+    "lesson": "Une grève préparée, disciplinée et financée gagne — parfois avec retard.",
+    "sources": ["wiki-1913", "wiki-1893"]
+  },
+  {
+    "id": "1921-8-heures", "year": 1921, "date": "1919 – 1921", "scope": "be", "themes": ["temps", "libertes"], "highlight": true,
+    "title": "Journée de 8 heures et liberté syndicale",
+    "text": "Au sortir de la guerre, la pression ouvrière est à son comble. En 1921, la Belgique adopte la journée de 8 heures et abroge l'article 310 du Code pénal, qui servait à poursuivre grévistes et piquets ; la liberté d'association est reconnue.",
+    "result": "gagne",
+    "resultText": "Journée de 8 heures et semaine de 48 heures (loi du 14 juin 1921), liberté syndicale, fin de la répression pénale des piquets.",
+    "lesson": "Les grandes conquêtes arrivent quand le rapport de force est à son maximum.",
+    "sources": ["carhop-rtt", "cambridge-droit-travail"]
+  },
+  {
+    "id": "1926-uk", "year": 1926, "date": "4 – 12 mai 1926", "scope": "monde", "themes": ["salaires"],
+    "title": "Royaume-Uni : la grève générale lâchée en route",
+    "text": "Pour soutenir les mineurs menacés de baisses de salaire, le Trades Union Congress lance une grève générale : environ 1,7 million de grévistes. Le gouvernement s'y était préparé. Au bout de neuf jours, le TUC arrête le mouvement sans garanties.",
+    "result": "perdu",
+    "resultText": "Abandonnés, les mineurs poursuivent seuls et doivent céder des mois plus tard. Une loi de 1927 restreint ensuite le droit de grève.",
+    "lesson": "S'arrêter sans garanties, c'est laisser les plus exposés seuls face au pouvoir.",
+    "sources": ["wiki-1926"]
+  },
+  {
+    "id": "1932-borinage", "year": 1932, "date": "juillet – septembre 1932", "scope": "be", "themes": ["salaires"],
+    "title": "La grève des mineurs du Borinage",
+    "text": "Partie spontanément des charbonnages du Borinage, une grève massive gagne le Hainaut puis d'autres régions en pleine crise économique : baisses de salaires, chômage, misère. Deux personnes sont tuées.",
+    "result": "partiel",
+    "resultText": "Le mouvement impose la question sociale au cœur de la crise, inspire le film « Misère au Borinage » (1933) et prépare le terrain de 1936.",
+    "lesson": "La colère spontanée ouvre une brèche ; l'organisation la transforme en conquêtes.",
+    "sources": ["wiki-greves-be"]
+  },
+  {
+    "id": "1936-be", "year": 1936, "date": "2 juin – 2 juillet 1936", "scope": "be", "themes": ["temps", "salaires", "libertes"], "highlight": true,
+    "title": "1936 : les congés payés",
+    "text": "La grève démarre chez les dockers d'Anvers et s'étend comme une traînée de poudre, avec des occupations d'usines, jusqu'à 500 000 grévistes. Syndicats socialistes et chrétiens se retrouvent côte à côte. Le Premier ministre Van Zeeland convoque une Conférence nationale du travail le 17 juin.",
+    "result": "gagne",
+    "resultText": "Six jours de congés payés, semaine de 40 heures dans certains secteurs, salaire minimum, reconnaissance de la liberté syndicale.",
+    "lesson": "Quand le mouvement déborde et que l'unité se fait, les acquis tombent en quelques semaines.",
+    "sources": ["wiki-1936", "rtbf-conges-payes"]
+  },
+  {
+    "id": "1936-fr", "year": 1936, "date": "juin 1936", "scope": "monde", "themes": ["temps", "salaires"],
+    "title": "France : les accords de Matignon",
+    "text": "Après la victoire électorale du Front populaire, une vague de grèves avec occupations d'usines déferle sur la France : environ deux millions de grévistes.",
+    "result": "gagne",
+    "resultText": "Accords de Matignon (7 juin) : hausses de salaires de 7 à 15 %, conventions collectives, délégués du personnel. Puis deux semaines de congés payés et la semaine de 40 heures.",
+    "lesson": "La grève d'en bas a obtenu davantage que ce que le programme électoral prévoyait.",
+    "sources": ["wiki-matignon"]
+  },
+  {
+    "id": "1937-flint", "year": 1937, "date": "30 déc. 1936 – 11 févr. 1937", "scope": "monde", "themes": ["libertes", "salaires"],
+    "title": "Flint : l'occupation qui fait plier General Motors",
+    "text": "Les ouvriers de General Motors occupent leurs usines de Flint (Michigan) pendant 44 jours, soutenus par leurs familles et toute la ville.",
+    "result": "gagne",
+    "resultText": "General Motors reconnaît le syndicat UAW. En un an, la syndicalisation gagne toute l'industrie automobile américaine.",
+    "lesson": "Occuper le lieu de travail, c'est rendre la grève impossible à briser.",
+    "sources": ["wiki-flint"]
+  },
+  {
+    "id": "1944-secu", "year": 1944, "date": "1944", "scope": "be", "themes": ["secu", "pensions"], "highlight": true,
+    "title": "Naissance de la sécurité sociale",
+    "text": "Dans la clandestinité, des représentants des travailleurs et des employeurs rédigent un « projet d'accord de solidarité sociale ». À la Libération, le rapport de force construit par le mouvement ouvrier — et la crainte d'une explosion sociale — le rendent incontournable.",
+    "result": "gagne",
+    "resultText": "L'arrêté-loi du 28 décembre 1944 crée la sécurité sociale des travailleurs : pensions, maladie-invalidité, chômage, allocations familiales, vacances annuelles.",
+    "lesson": "La sécu n'est pas un cadeau : c'est un compromis arraché par un mouvement puissant.",
+    "sources": ["secu-histoire"]
+  },
+  {
+    "id": "1950-question-royale", "year": 1950, "date": "juillet – 1er août 1950", "scope": "be", "themes": ["libertes"],
+    "title": "La grève qui tranche la Question royale",
+    "text": "Le retour du roi Léopold III divise le pays. Surtout en Wallonie, une grève générale mobilise jusqu'à 700 000 personnes. Le 30 juillet, à Grâce-Berleur, la gendarmerie tire : quatre morts.",
+    "result": "gagne",
+    "resultText": "Le 1er août 1950, Léopold III annonce qu'il s'efface au profit de son fils Baudouin.",
+    "lesson": "La grève peut aussi dénouer une crise politique majeure.",
+    "sources": ["wiki-greves-be"]
+  },
+  {
+    "id": "1956-montgomery", "year": 1956, "date": "5 déc. 1955 – 20 déc. 1956", "scope": "monde", "themes": ["egalite", "libertes"],
+    "title": "Montgomery : 381 jours de boycott",
+    "text": "Après l'arrestation de Rosa Parks, la communauté noire de Montgomery (Alabama) boycotte les bus pendant 381 jours, en s'organisant avec des covoiturages et des marches quotidiennes.",
+    "result": "gagne",
+    "resultText": "La ségrégation dans les bus est jugée inconstitutionnelle et prend fin.",
+    "lesson": "Le refus collectif est une grève comme une autre — et la durée est une arme.",
+    "sources": ["wiki-montgomery"]
+  },
+  {
+    "id": "1960-loi-unique", "year": 1960, "date": "20 déc. 1960 – 23 janv. 1961", "scope": "be", "themes": ["austerite"],
+    "title": "La « grève du siècle » contre la Loi unique",
+    "text": "Contre la Loi unique d'austérité du gouvernement Eyskens, environ 700 000 grévistes. En Wallonie, sous l'impulsion d'André Renard, la grève dure cinq semaines en plein hiver ; en Flandre, le travail reprend plus vite. Répression lourde : gendarmerie, armée, plus de 2 000 condamnations, quatre grévistes tués.",
+    "result": "partiel",
+    "resultText": "La Loi unique est votée le 14 février 1961. Mais des élections anticipées suivent dès mars, et la grève accélère durablement la marche vers le fédéralisme.",
+    "lesson": "Perdre une bataille n'est pas perdre la guerre : la grève de 60 a changé le pays.",
+    "sources": ["wiki-1960", "rtbf-1960", "nvdb-1960"]
+  },
+  {
+    "id": "1966-fn", "year": 1966, "date": "16 février – 5 mai 1966", "scope": "be", "themes": ["egalite", "salaires"], "highlight": true,
+    "title": "Les femmes de la FN : « À travail égal, salaire égal »",
+    "text": "3 000 ouvrières de la FN Herstal arrêtent le travail pendant douze semaines pour l'égalité salariale. Leur grève met plus de 5 000 travailleurs au chômage technique : l'usine entière dépend d'elles.",
+    "result": "partiel",
+    "resultText": "Elles obtiennent une augmentation et la revalorisation des fonctions féminines, et leur combat donne une impulsion décisive à l'égalité salariale, inscrite dans le traité de Rome.",
+    "lesson": "Celles qu'on croyait remplaçables ont paralysé une usine entière.",
+    "sources": ["csc-fn1966", "carhop-fn1966"]
+  },
+  {
+    "id": "1968-fr", "year": 1968, "date": "mai – juin 1968", "scope": "monde", "themes": ["salaires", "libertes"],
+    "title": "Mai 68 : les accords de Grenelle",
+    "text": "Parti des universités, le mouvement devient la plus grande grève de l'histoire de France : des millions de grévistes, usines occupées dans tout le pays.",
+    "result": "gagne",
+    "resultText": "Accords de Grenelle : salaire minimum augmenté de 35 %, hausse générale des salaires, reconnaissance de la section syndicale d'entreprise.",
+    "lesson": "Quand étudiant·es et travailleurs convergent, tout devient négociable.",
+    "sources": ["wiki-grenelle"]
+  },
+  {
+    "id": "1969-italie", "year": 1969, "date": "automne 1969", "scope": "monde", "themes": ["salaires", "libertes"],
+    "title": "Italie : l'« automne chaud »",
+    "text": "Grèves massives dans les usines du Nord de l'Italie : assemblées, grèves tournantes, délégués élus à la base.",
+    "result": "gagne",
+    "resultText": "Hausses de salaires, réduction du temps de travail et, en 1970, le « Statut des travailleurs » qui protège les libertés syndicales et contre les licenciements abusifs.",
+    "lesson": "La démocratie à la base fait la force d'un mouvement.",
+    "sources": ["wiki-hot-autumn"]
+  },
+  {
+    "id": "1975-islande", "year": 1975, "date": "24 octobre 1975", "scope": "monde", "themes": ["egalite"],
+    "title": "Islande : le jour où les femmes ont tout arrêté",
+    "text": "90 % des Islandaises arrêtent le travail, salarié et domestique, pour une journée. Le pays est à l'arrêt : écoles, usines, journaux, standards téléphoniques.",
+    "result": "gagne",
+    "resultText": "L'année suivante, le Parlement vote une loi sur l'égalité ; en 1980, Vigdís Finnbogadóttir devient la première femme au monde élue présidente au suffrage universel direct.",
+    "lesson": "Montrer qui fait tourner la société, c'est la démonstration de force ultime.",
+    "sources": ["wiki-islande"]
+  },
+  {
+    "id": "1980-gdansk", "year": 1980, "date": "14 – 31 août 1980", "scope": "monde", "themes": ["libertes"],
+    "title": "Gdańsk : la grève pour une collègue",
+    "text": "La grève des chantiers navals de Gdańsk démarre après le licenciement d'une grutière, Anna Walentynowicz. Elle s'étend à tout le littoral puis au pays ; un comité de grève inter-entreprises présente 21 revendications.",
+    "result": "gagne",
+    "resultText": "Accords d'août : droit de grève et premier syndicat indépendant du bloc soviétique, Solidarność, qui comptera environ 10 millions de membres.",
+    "lesson": "Une grève de solidarité pour une seule collègue peut changer l'histoire.",
+    "sources": ["wiki-gdansk"]
+  },
+  {
+    "id": "1985-mineurs", "year": 1985, "date": "mars 1984 – mars 1985", "scope": "monde", "themes": ["austerite"],
+    "title": "Royaume-Uni : la grève des mineurs isolée",
+    "text": "Contre la fermeture des puits, les mineurs britanniques font grève pendant un an. Le gouvernement Thatcher s'y est préparé : stocks de charbon, police mobilisée à grande échelle. Le mouvement reste isolé.",
+    "result": "perdu",
+    "resultText": "Défaite totale : les fermetures s'enchaînent et le syndicalisme britannique en sort durablement affaibli.",
+    "lesson": "Un secteur seul, même héroïque, ne gagne pas contre un gouvernement préparé : il faut élargir.",
+    "sources": ["wiki-mineurs"]
+  },
+  {
+    "id": "1993-plan-global", "year": 1993, "date": "26 novembre 1993", "scope": "be", "themes": ["salaires", "austerite"],
+    "title": "Le Plan global et l'« indice santé »",
+    "text": "Grève générale contre le « Plan global » du gouvernement Dehaene : modération salariale et modification de l'indexation.",
+    "result": "perdu",
+    "resultText": "Le plan passe et introduit l'« indice santé », qui retire notamment le tabac, l'alcool et les carburants du calcul de l'indexation. Ce recul est toujours en vigueur.",
+    "lesson": "Chaque brèche dans l'indexation tend à devenir définitive : c'est pour ça qu'on la défend aujourd'hui.",
+    "sources": ["wiki-greves-be"]
+  },
+  {
+    "id": "1995-fr", "year": 1995, "date": "novembre – décembre 1995", "scope": "monde", "themes": ["pensions", "secu"],
+    "title": "France : trois semaines contre le plan Juppé",
+    "text": "Contre le plan Juppé sur la Sécurité sociale et les retraites des régimes spéciaux, trois semaines de grève dans les transports et la fonction publique, avec un large soutien de la population.",
+    "result": "partiel",
+    "resultText": "Le gouvernement retire la réforme des retraites des régimes spéciaux, mais maintient une partie de son plan sur la Sécurité sociale.",
+    "lesson": "Le soutien de la population, même à des grèves qui la gênent, est décisif.",
+    "sources": ["wiki-1995"]
+  },
+  {
+    "id": "2005-pacte", "year": 2005, "date": "7 et 28 octobre 2005", "scope": "be", "themes": ["pensions"],
+    "title": "Le Pacte des générations",
+    "text": "Contre le « Pacte des générations » qui durcit l'accès à la prépension, deux grèves générales en octobre.",
+    "result": "perdu",
+    "resultText": "Le pacte est adopté.",
+    "lesson": "Une mobilisation trop courte laisse le gouvernement attendre que l'orage passe.",
+    "sources": ["wiki-greves-be"]
+  },
+  {
+    "id": "2006-cpe", "year": 2006, "date": "février – avril 2006", "scope": "monde", "themes": ["libertes"],
+    "title": "France : le CPE retiré",
+    "text": "Le « contrat première embauche » permettait de licencier sans motif les moins de 26 ans pendant deux ans. Étudiant·es, lycéen·nes et syndicats manifestent ensemble pendant deux mois.",
+    "result": "gagne",
+    "resultText": "Bien que voté, le CPE est retiré le 10 avril 2006.",
+    "lesson": "Une loi votée n'est pas une fatalité.",
+    "sources": ["wiki-cpe"]
+  },
+  {
+    "id": "2014-michel", "year": 2014, "date": "6 novembre – 15 décembre 2014", "scope": "be", "themes": ["austerite", "pensions", "salaires"],
+    "title": "L'automne 2014 contre le gouvernement Michel",
+    "text": "Plus de 100 000 manifestant·es le 6 novembre, puis des grèves tournantes par province et une grève générale nationale le 15 décembre, qui paralyse le pays.",
+    "result": "perdu",
+    "resultText": "Le saut d'index de 2015 et le relèvement de l'âge de la pension à 67 ans sont adoptés. Le plan d'action s'arrête sans victoire.",
+    "lesson": "Un plan d'action fort a besoin d'une suite crédible : c'est la durée qui fait plier.",
+    "sources": ["afp-2014", "afp-2014-greve", "wiki-greves-be"]
+  },
+  {
+    "id": "2023-france", "year": 2023, "date": "2023 – 2025", "scope": "monde", "themes": ["pensions"],
+    "title": "France : la réforme passée en force… puis suspendue",
+    "text": "Contre le report de l'âge légal à 64 ans, l'intersyndicale unie organise 14 journées de mobilisation, avec plus d'un million de manifestant·es certains jours selon les autorités. La réforme passe en force, sans vote, par l'article 49.3.",
+    "result": "differe",
+    "resultText": "Deux ans plus tard, sur fond de crise politique, le relèvement de l'âge est suspendu par la loi du 30 décembre 2025.",
+    "lesson": "Une défaite apparente peut devenir une victoire quand le pouvoir perd sa légitimité.",
+    "sources": ["wiki-france-2023", "cfdt-suspension", "lafinance-suspension"]
+  },
+  {
+    "id": "2023-uaw", "year": 2023, "date": "septembre – octobre 2023", "scope": "monde", "themes": ["salaires"],
+    "title": "États-Unis : la grève « debout » de l'automobile",
+    "text": "Le syndicat UAW frappe les trois grands constructeurs américains en même temps, en étendant la grève usine par usine, sans prévenir à l'avance lesquelles.",
+    "result": "gagne",
+    "resultText": "Des hausses de salaire d'environ 25 % sur la durée des conventions et le retour de l'indexation sur le coût de la vie.",
+    "lesson": "Une escalade progressive et imprévisible met l'adversaire sous pression.",
+    "sources": ["wiki-uaw-2023"]
+  },
+  {
+    "id": "2023-manifester", "year": 2023, "date": "juin – décembre 2023", "scope": "be", "themes": ["libertes"], "highlight": true,
+    "title": "Le droit de manifester défendu… et gagné",
+    "text": "Un projet de loi permettait aux juges d'interdire à une personne de manifester. Syndicats, associations et défenseurs des droits humains se mobilisent pendant des mois, jusqu'à une manifestation nationale à Bruxelles.",
+    "result": "gagne",
+    "resultText": "Le 6 décembre 2023, le gouvernement renonce à la peine d'interdiction de manifester.",
+    "lesson": "Une mobilisation tenace et large fait reculer un gouvernement, même sur un texte déjà avancé.",
+    "sources": ["bx1-interdiction-2023"]
+  },
+  {
+    "id": "2026-arizona", "year": 2026, "date": "2025 – 2026", "scope": "be", "themes": ["pensions", "salaires", "austerite"],
+    "title": "Le mouvement contre l'Arizona",
+    "text": "Depuis février 2025, grèves générales et manifestations nationales s'enchaînent contre la politique du gouvernement De Wever, avec de 30 000 à 140 000 personnes dans la rue selon les jours et les sources.",
+    "result": "en-cours",
+    "resultText": "La réforme des pensions est votée, mais la hausse de TVA est retirée des négociations et la majorité se fracture sur le budget. Rien n'est joué.",
+    "lesson": "Cette page-là s'écrit maintenant. Avec toi.",
+    "sources": ["rtbf-9oct", "21news-tva", "vrt-crise"]
+  }
+]

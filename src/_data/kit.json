@@ -1,0 +1,31 @@
+{
+  "print": [
+    { "title": "Affiche « Lundi 23 novembre »", "desc": "L'appel au rendez-vous, en grand. Pour les vitrines, valves, salles de pause.", "preview": "affiche-23-novembre.png", "w": 840, "h": 1188, "files": [ { "label": "A3 (PDF)", "file": "affiche-23-novembre-A3.pdf" }, { "label": "A4 (PDF)", "file": "affiche-23-novembre-A4.pdf" } ] },
+    { "title": "Affiche « Pourquoi on y va »", "desc": "Quatre raisons en un coup d'œil : index, pension, chômage, l'argent existe.", "preview": "affiche-pourquoi.png", "w": 840, "h": 1188, "files": [ { "label": "A4 (PDF)", "file": "affiche-pourquoi-A4.pdf" } ] },
+    { "title": "Tract recto-verso A5", "desc": "Le tract à distribuer : l'appel au recto, les raisons et l'histoire au verso.", "preview": "tract-A5.png", "w": 840, "h": 1188, "files": [ { "label": "A5 recto-verso (PDF)", "file": "tract-A5.pdf" } ] },
+    { "title": "Pancartes A3", "desc": "Six pancartes prêtes à imprimer, une par page, avec les slogans du kit.", "preview": "pancartes.png", "w": 840, "h": 1188, "files": [ { "label": "6 pancartes A3 (PDF)", "file": "pancartes-A3.pdf" } ] }
+  ],
+  "social": [
+    { "title": "Carré « 23 novembre »", "desc": "Pour Instagram, Facebook, LinkedIn (1080 × 1080).", "file": "visuel-carre-23-novembre.png", "w": 1080, "h": 1080 },
+    { "title": "Story « 23 novembre »", "desc": "Pour les stories Instagram, WhatsApp, Facebook (1080 × 1920).", "file": "visuel-story-23-novembre.png", "w": 1080, "h": 1920 },
+    { "title": "« Touche pas à l'index »", "desc": "Carré sur l'indexation (1080 × 1080).", "file": "visuel-index.png", "w": 1080, "h": 1080 },
+    { "title": "« Malus pension »", "desc": "Carré sur la réforme des pensions (1080 × 1080).", "file": "visuel-pension.png", "w": 1080, "h": 1080 },
+    { "title": "« 21,2 milliards »", "desc": "Carré sur les alternatives budgétaires (1080 × 1080).", "file": "visuel-alternatives.png", "w": 1080, "h": 1080 },
+    { "title": "Bannière", "desc": "Pour une photo de couverture ou un en-tête (1500 × 500).", "file": "banniere-23-novembre.png", "w": 1500, "h": 500 }
+  ],
+  "slogans": [
+    "Ce que la rue a gagné, la rue le défend",
+    "Touche pas à mon index",
+    "Les épaules les plus larges, c'est pas nous",
+    "Nos pensions ne sont pas un malus",
+    "Taxez les fortunes, pas les factures",
+    "1893, 1936, 1944… 2026",
+    "Du pain, des roses et l'index",
+    "Ensemble, on pèse plus que leur budget"
+  ],
+  "texts": [
+    { "title": "Message court (WhatsApp, SMS)", "text": "Lundi 23 novembre, manifestation nationale à Bruxelles (CSC, FGTB, Synova). Index raboté, pensions sous malus, chômage limité : le budget se décide maintenant. On y va ensemble ? Toutes les infos : https://ouaisfieu.github.io/mobilisation/" },
+    { "title": "Publication réseaux sociaux", "text": "Le gouvernement se déchire sur une question : qui paie ? Les syndicats ont chiffré 21,2 milliards d'alternatives qui ne passent ni par nos salaires, ni par nos pensions. Le 23 novembre, on remplit Bruxelles pour le rappeler. Agenda, enjeux, simulateurs et histoire des luttes : https://ouaisfieu.github.io/mobilisation/" },
+    { "title": "Message aux collègues", "text": "Bonjour à toutes et tous, le front commun syndical appelle à une manifestation nationale le lundi 23 novembre à Bruxelles. Nos salaires (indexation), nos pensions (malus) et nos services publics sont directement concernés. Je propose qu'on y aille ensemble : qui est partant·e ? On peut s'organiser avec la délégation pour le trajet." }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "total": 21244,
+  "items": [
+    { "label": "Globaliser tous les revenus à l'impôt (y compris financiers et immobiliers)", "value": 12900, "note": "Estimation du Bureau du Plan" },
+    { "label": "Limiter les réductions d'impôt des sociétés", "value": 2550 },
+    { "label": "Limiter les subsides salariaux aux entreprises", "value": 890 },
+    { "label": "Cotisations sociales équitables sur les rémunérations alternatives (voitures de société…)", "value": 756 },
+    { "label": "Cotisations sociales équitables sur le travail étudiant", "value": 750 },
+    { "label": "Supprimer le plafond des cotisations sociales des indépendants", "value": 700 },
+    { "label": "Limiter les réductions de cotisations patronales", "value": 620 },
+    { "label": "Allonger le salaire garanti en cas de maladie", "value": 575 },
+    { "label": "Fin du taux réduit et des régimes d'exception des sociétés de management", "value": 526 },
+    { "label": "Cotisations sociales équitables sur les flexi-jobs", "value": 380 },
+    { "label": "Libre négociation des salaires (réforme de la loi de 1996)", "value": 360, "note": "Estimation syndicale" },
+    { "label": "Un prix juste pour tous les médicaments", "value": 237 }
+  ],
+  "wealth": [
+    { "label": "Les 50 % les moins riches", "value": 8.3, "tone": "r1" },
+    { "label": "Les 40 % du milieu", "value": 36.8, "tone": "r2" },
+    { "label": "Les 10 % les plus riches", "value": 54.9, "tone": "r3" }
+  ]
+}

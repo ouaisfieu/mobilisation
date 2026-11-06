@@ -1,0 +1,47 @@
+[
+  {
+    "id": "enseignement-17-novembre",
+    "date": "2026-11-17",
+    "title": "L'enseignement et les étudiant·es dans la rue",
+    "kind": "Mobilisation",
+    "sector": "Enseignement",
+    "place": "Bruxelles",
+    "region": "Fédération Wallonie-Bruxelles",
+    "organizers": "FEF (Fédération des étudiants francophones), CSC-Enseignement et syndicats de l'enseignement",
+    "summary": "Journée internationale des étudiant·es. Élèves, étudiant·es, enseignant·es et parents contre les coupes dans l'enseignement : conditions d'études décentes, minerval accessible, refinancement de l'école.",
+    "practical": "Modalités précises (grève, manifestation, heure, lieu) encore à confirmer par les organisations. CSC-Enseignement annonce une présence « dans les rues de Bruxelles ».",
+    "status": "Annoncé — modalités à confirmer",
+    "sources": ["dh-17nov", "bx1-17nov", "csc-ens-17nov"],
+    "featured": false
+  },
+  {
+    "id": "namur-18-novembre",
+    "date": "2026-11-18",
+    "title": "Manifestation des services publics locaux wallons",
+    "kind": "Manifestation",
+    "sector": "Pouvoirs locaux et provinciaux",
+    "place": "Namur",
+    "region": "Wallonie",
+    "organizers": "Front commun syndical des pouvoirs locaux et provinciaux",
+    "summary": "Contre les économies du budget wallon qui menacent l'emploi et les services publics de proximité (communes, CPAS, provinces).",
+    "practical": "Heure et lieu de rassemblement : se renseigner auprès des délégations syndicales des communes, CPAS et provinces.",
+    "status": "Annoncé",
+    "sources": ["lalibre-23nov"],
+    "featured": false
+  },
+  {
+    "id": "manif-nationale-23-novembre",
+    "date": "2026-11-23",
+    "title": "Manifestation nationale en front commun",
+    "kind": "Manifestation nationale",
+    "sector": "Interprofessionnel — tout le monde",
+    "place": "Bruxelles",
+    "region": "National",
+    "organizers": "CSC, FGTB et Synova, avec les mutualités et la société civile",
+    "summary": "« Nous ne subirons pas l'avenir, nous le construisons ensemble. » Contre l'austérité qui fait payer les travailleurs et travailleuses, les allocataires sociaux et les services publics ; pour des emplois de qualité, des salaires décents, des services publics robustes et une fiscalité juste.",
+    "practical": "Heure et point de départ : à confirmer par le front commun — vérifie les sites officiels et ta délégation. Les syndicats organisent habituellement des départs collectifs depuis les régions.",
+    "status": "Confirmé",
+    "sources": ["rtbf-23nov", "csc-23nov", "vrt-23nov", "lalibre-23nov"],
+    "featured": true
+  }
+]

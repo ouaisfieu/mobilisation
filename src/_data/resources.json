@@ -1,0 +1,37 @@
+{
+  "official": [
+    { "name": "CSC", "desc": "Confédération des syndicats chrétiens", "url": "https://www.lacsc.be/" },
+    { "name": "FGTB", "desc": "Fédération générale du travail de Belgique", "url": "https://fgtb.be/" },
+    { "name": "Synova", "desc": "Ex-CGSLB, syndicat libre", "url": "https://www.synova.be/fr/nouveau-nom" },
+    { "name": "mypension.be", "desc": "Le service officiel pour consulter ta carrière et ta pension", "url": "https://www.mypension.be/" },
+    { "name": "ONEM", "desc": "La réforme du chômage expliquée par l'Office national de l'emploi", "url": "https://www.onem.be/actualites/2025/08/13/reforme-du-chomage-qu-est-ce-qui-change-" },
+    { "name": "Droits Quotidiens", "desc": "Fiches juridiques claires sur les droits au quotidien, dont les droits en manifestation", "url": "https://www.droitsquotidiens.be/fr/actualites/manifestation-arrestation-administrative-et-judiciaire-quelles-differences" }
+  ],
+  "archives": [
+    { "name": "CARHOP", "desc": "Centre d'animation et de recherche en histoire ouvrière et populaire : dossiers sur 1936, 1960-61, la grève de la FN…", "url": "https://www.carhop.be/" },
+    { "name": "CRISP", "desc": "Centre de recherche et d'information socio-politiques : analyses de référence sur la concertation sociale et les syndicats", "url": "https://www.crisp.be/" },
+    { "name": "Amsab-ISG", "desc": "Institut d'histoire sociale (Gand) : archives du mouvement ouvrier", "url": "https://www.amsab.be/" },
+    { "name": "Portail de la sécurité sociale", "desc": "Histoire officielle de la sécurité sociale belge, du pacte social de 1944 à aujourd'hui", "url": "https://www.socialsecurity.be/citizen/fr/a-propos-de-la-securite-sociale/histoire" }
+  ],
+  "books": [
+    { "author": "Frances Fox Piven et Richard A. Cloward", "title": "Poor People's Movements: Why They Succeed, How They Fail", "year": 1977, "why": "La thèse classique : la force des mouvements populaires vient de leur capacité à perturber." },
+    { "author": "Erica Chenoweth et Maria J. Stephan", "title": "Why Civil Resistance Works", "year": 2011, "why": "Plus de 300 campagnes étudiées : la résistance non violente réussit deux fois plus souvent." },
+    { "author": "Charles Tilly et Sidney Tarrow", "title": "Politique(s) du conflit", "year": 2008, "why": "Le manuel de référence sur les répertoires d'action et les mouvements sociaux." },
+    { "author": "Rosa Luxemburg", "title": "Grève de masse, parti et syndicats", "year": 1906, "why": "Tirée de la révolution russe de 1905 : comment les grèves s'enchaînent et se renforcent." },
+    { "author": "Albert O. Hirschman", "title": "Défection et prise de parole (Exit, Voice, and Loyalty)", "year": 1970, "why": "Partir ou protester : pourquoi la « prise de parole » collective est un levier de changement." },
+    { "author": "Jane McAlevey", "title": "No Shortcuts: Organizing for Power", "year": 2016, "why": "La différence entre mobiliser et organiser, et comment construire des majorités sur les lieux de travail." },
+    { "author": "Thomas Piketty", "title": "Une brève histoire de l'égalité", "year": 2021, "why": "Deux siècles de progrès vers l'égalité, arrachés par des luttes sociales et politiques." },
+    { "author": "Karl Polanyi", "title": "La Grande Transformation", "year": 1944, "why": "Quand le marché s'étend sans limites, la société se défend : le « double mouvement »." },
+    { "author": "Stéphane Sirot", "title": "La grève en France. Une histoire sociale (XIXe-XXe siècle)", "year": 2002, "why": "Une histoire de la grève comme pratique, de ses formes et de ses effets." }
+  ],
+  "films": [
+    { "title": "Misère au Borinage", "who": "Henri Storck et Joris Ivens", "year": 1933, "why": "Le documentaire tourné après la grève des mineurs de 1932." },
+    { "title": "Le Sel de la terre (Salt of the Earth)", "who": "Herbert Biberman", "year": 1954, "why": "Une grève de mineurs tenue par les femmes. Un classique interdit en son temps." },
+    { "title": "Harlan County, USA", "who": "Barbara Kopple", "year": 1976, "why": "Une grève de mineurs au Kentucky, filmée de l'intérieur." },
+    { "title": "La Commune (Paris, 1871)", "who": "Peter Watkins", "year": 2000, "why": "La Commune rejouée comme un direct télévisé par des centaines d'habitant·es." },
+    { "title": "We Want Sex Equality (Made in Dagenham)", "who": "Nigel Cole", "year": 2010, "why": "La grève des ouvrières de Ford pour l'égalité salariale, en 1968." },
+    { "title": "Deux jours, une nuit", "who": "Jean-Pierre et Luc Dardenne", "year": 2014, "why": "La solidarité au travail, à hauteur de femme, en Belgique." },
+    { "title": "Pride", "who": "Matthew Warchus", "year": 2014, "why": "Des militant·es LGBT soutiennent les mineurs en grève en 1984 : l'alliance improbable." },
+    { "title": "En guerre", "who": "Stéphane Brizé", "year": 2018, "why": "Une lutte contre une fermeture d'usine, au plus près des délégués." }
+  ]
+}

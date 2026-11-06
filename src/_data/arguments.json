@@ -1,0 +1,72 @@
+[
+  {
+    "id": "deficit",
+    "claim": "« Le déficit est énorme, tout le monde doit faire des efforts. »",
+    "fair": "C'est vrai : la Belgique a affiché en 2025 le plus gros déficit de la zone euro (5,2 % du PIB) et sa dette atteint 107,9 % du PIB. Le vieillissement, les charges d'intérêt et la défense pèsent sur les dépenses.",
+    "answer": "<p>Personne ne nie le problème. La vraie question, c'est <strong>qui paie</strong>. Le front commun a mis sur la table <strong>21,2 milliards d'euros d'alternatives</strong> chiffrées, dont 12,9 milliards (selon le Bureau du Plan) en taxant tous les revenus de la même manière, ceux du travail comme ceux du capital. C'est d'ailleurs exactement sur cette question — faire contribuer « les épaules les plus larges » — que la majorité s'est déchirée début novembre. Raboter les salaires et les allocations réduit aussi la consommation, donc les recettes : l'austérité n'est pas gratuite.</p>",
+    "sources": ["dh-deficit", "lalibre-alternatives", "vrt-crise"]
+  },
+  {
+    "id": "longevite",
+    "claim": "« On vit plus longtemps, il faut travailler plus longtemps. »",
+    "fair": "L'espérance de vie a progressé et le nombre de pensionné·es augmente par rapport aux actifs, ce qui renchérit le coût des pensions.",
+    "answer": "<p>On vit plus longtemps, mais pas forcément <strong>en bonne santé</strong> : l'espérance de vie en bonne santé à la naissance tourne autour de 63 ans en Belgique (Eurostat), bien avant 67 ans. Et l'inégalité est brutale : les 10 % d'hommes les plus défavorisés vivent en moyenne 10,6 ans de moins que les 10 % les plus favorisés ; à 67 ans, environ un tiers des hommes les plus pauvres sont déjà morts. Reculer l'âge et pénaliser les départs anticipés, c'est faire payer aux plus fragiles la longévité des plus aisés.</p>",
+    "sources": ["parismatch-hly", "dh-inegalites-mort"]
+  },
+  {
+    "id": "femmes",
+    "claim": "« La réforme des pensions ne pénalise pas les femmes. »",
+    "fair": "Le ministre Jan Jambon affirme, chiffres du Bureau du Plan à l'appui, que la réforme n'augmente pas significativement la pauvreté ni l'écart de pension hommes-femmes, et qu'un amendement protège les mi-temps (97 % prestent entre 150 et 162 jours par an).",
+    "answer": "<p>Les chiffres du gouvernement lui-même disent l'inverse : sur les départs anticipés récents, <strong>36,7 % des femmes</strong> ne rempliraient pas les deux conditions pour éviter le malus, contre 18,9 % des hommes. Selon la CSC, <strong>382 000 travailleurs et travailleuses à mi-temps ou moins</strong> sont menacés ; à mi-temps, un seul jour d'absence peut faire perdre une année entière, et sous 45 % d'un temps plein, l'année ne compte jamais. Dans les secteurs les plus exposés (enseignement, soins, titres-services), jusqu'à 90 % de ces temps partiels sont des femmes. La CSC a saisi la Cour constitutionnelle.</p>",
+    "sources": ["lavenir-jambon", "rtbf-bonus-malus", "csc-temps-partiel"]
+  },
+  {
+    "id": "index",
+    "claim": "« L'indexation automatique plombe la compétitivité. »",
+    "fair": "Les employeurs soulignent que l'indexation automatique fait évoluer le coût du travail plus vite que dans les pays voisins quand l'inflation est forte.",
+    "answer": "<p>L'indexation ne fait que <strong>maintenir</strong> le pouvoir d'achat : elle n'augmente rien. Et pour 2025-2026, la norme salariale a été fixée à <strong>0 %</strong> : aucune hausse réelle au-delà de l'index. Quant à l'« index en centimes » de 2026 et 2028, la part d'indexation non versée aux salarié·es n'est même pas réinvestie dans l'emploi : la moitié va à l'État, l'autre moitié reste à l'employeur. Avec 5,26 % d'inflation en octobre 2026, toucher à l'index, c'est faire payer la flambée de l'énergie aux ménages.</p>",
+    "sources": ["lexgo-norme", "mondaq-centenindex", "businessam-inflation-oct"]
+  },
+  {
+    "id": "chomage",
+    "claim": "« Il faut que le travail paie plus que le chômage. »",
+    "fair": "Le gouvernement veut augmenter le taux d'emploi et estime qu'une allocation illimitée dans le temps décourage la reprise du travail.",
+    "answer": "<p>Exclure n'est pas créer des emplois. Parmi les plus de 168 000 personnes en fin de droits en février 2026, <strong>44,5 % sont peu diplômées</strong> et près de la moitié vivent en Wallonie, où les offres manquent. Une partie se tourne vers les CPAS, financés par les communes : on déplace la facture, on ne la supprime pas. Et un chômeur sans revenu ne cherche pas mieux un emploi — il cherche d'abord à survivre.</p>",
+    "sources": ["lalibre-exclus", "rtbf-cpas"]
+  },
+  {
+    "id": "elus",
+    "claim": "« Le gouvernement a été élu, il applique son programme. »",
+    "fair": "La coalition dispose d'une majorité au Parlement, issue des élections de 2024.",
+    "answer": "<p>La démocratie ne s'arrête pas le jour du vote. Le droit de manifester et le droit de grève sont des libertés fondamentales protégées par les textes internationaux que la Belgique a ratifiés. Et rappelons d'où vient le suffrage universel lui-même : des <strong>grèves générales de 1893 et 1913</strong>. Enfin, la majorité elle-même est divisée sur les choix budgétaires : la rue ne s'oppose pas à la démocratie, elle y participe.</p>",
+    "sources": ["wiki-1893", "wiki-1913", "vrt-crise"]
+  },
+  {
+    "id": "syndicats",
+    "claim": "« Les syndicats ne représentent qu'eux-mêmes. »",
+    "fair": "Certains estiment que les syndicats défendent surtout les salarié·es protégé·es et bloquent les réformes.",
+    "answer": "<p>La CSC et la FGTB comptent chacune environ 1,5 million de membres, Synova 310 000 : plus de 3 millions de personnes, et un taux de syndicalisation proche de 50 % des salarié·es. Les syndicats sont au cœur de la concertation sociale belge depuis 1944. Ce que les organisations reprochent au gouvernement, c'est justement d'avoir placé cette concertation « devant le fait accompli », de l'avoir affaiblie ou ignorée.</p>",
+    "sources": ["eurofound-be", "rtbf-synova", "moustique-griefs"]
+  },
+  {
+    "id": "greve-cout",
+    "claim": "« Les grèves coûtent cher et prennent les usagers en otage. »",
+    "fair": "Une grève perturbe les transports, les écoles et les services, et pèse sur l'activité économique d'une journée.",
+    "answer": "<p>Une grève coûte d'abord aux grévistes, qui perdent leur salaire. Si elle dérange, c'est justement parce qu'elle montre que rien ne tourne sans celles et ceux qui travaillent : c'est ce qui lui donne du poids, et c'est ainsi qu'ont été gagnés la journée de 8 heures et les congés payés. Comparons : une journée de perturbation d'un côté ; de l'autre, un malus pouvant atteindre 25 % de la pension <strong>à vie</strong>, ou un index perdu qui ne se rattrape jamais.</p>",
+    "sources": ["wiki-1936", "carhop-rtt", "csc-temps-partiel"]
+  },
+  {
+    "id": "riches",
+    "claim": "« Taxer davantage les plus riches ne rapporterait presque rien. »",
+    "fair": "Une partie des économistes craint que des taxes sur le patrimoine rapportent moins que prévu, à cause des comportements d'évitement.",
+    "answer": "<p>La richesse existe, et elle est concentrée : selon la Banque nationale, les 10 % des ménages les plus riches détiennent <strong>54,9 % du patrimoine net</strong>, les 50 % les moins riches seulement 8,3 %. La mesure phare des syndicats n'est pas une taxe exotique : c'est la <strong>globalisation des revenus</strong>, c'est-à-dire taxer tous les revenus ensemble et de façon progressive, comme le sont déjà les salaires. Le Bureau du Plan l'estime à 12,9 milliards. Ils demandent aussi un cadastre des fortunes, pour savoir enfin de quoi on parle.</p>",
+    "sources": ["forum-patrimoine", "lalibre-alternatives", "kairos-petition"]
+  },
+  {
+    "id": "violence",
+    "claim": "« Ces manifestations finissent toujours dans la violence. »",
+    "fair": "Des dégradations et des affrontements ont eu lieu en marge de plusieurs manifestations, notamment le 9 octobre 2026.",
+    "answer": "<p>Le 9 octobre, la police comptait environ 30 000 manifestant·es dans le cortège et un groupe d'environ un millier de casseurs en marge : l'immense majorité défile pacifiquement, et les syndicats condamnent ces violences. Attention à l'amalgame : il sert à justifier des lois qui restreindraient le droit de manifester de toutes et tous, comme la loi « casseur-payeur » réclamée par le ministre de l'Intérieur. En 2023, une interdiction judiciaire de manifester avait été abandonnée face à la mobilisation.</p>",
+    "sources": ["rtbf-9oct", "bx1-casseur-payeur", "bx1-interdiction-2023"]
+  }
+]

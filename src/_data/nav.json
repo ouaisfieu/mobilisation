@@ -1,0 +1,26 @@
+{
+  "main": [
+    { "label": "Agenda", "url": "/agenda/" },
+    { "label": "Les enjeux", "url": "/enjeux/" },
+    { "label": "L'argent existe", "url": "/alternatives/" },
+    { "label": "Histoire", "url": "/histoire/" },
+    { "label": "Analyses", "url": "/analyses/" },
+    { "label": "Agir", "url": "/agir/", "cta": true }
+  ],
+  "secondary": [
+    { "label": "Vos droits", "url": "/droits/" },
+    { "label": "Mode manif (hors ligne)", "url": "/mode-manif/" },
+    { "label": "Ils disent, on répond", "url": "/arguments/" },
+    { "label": "FAQ", "url": "/faq/" },
+    { "label": "Kit visuel", "url": "/kit/" },
+    { "label": "Quiz", "url": "/quiz/" },
+    { "label": "Actualités", "url": "/actualites/" },
+    { "label": "Ressources", "url": "/ressources/" },
+    { "label": "Sources", "url": "/sources/" },
+    { "label": "À propos", "url": "/a-propos/" }
+  ],
+  "lang": [
+    { "label": "Nederlands", "url": "/nl/", "lang": "nl" },
+    { "label": "English", "url": "/en/", "lang": "en" }
+  ]
+}

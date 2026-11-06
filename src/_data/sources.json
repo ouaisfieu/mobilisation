@@ -1,0 +1,786 @@
+{
+ "rtbf-23nov": {
+  "topic": "actualite",
+  "publisher": "RTBF",
+  "date": "2026-10-21",
+  "title": "Les trois syndicats appellent à une nouvelle manifestation nationale à Bruxelles, le 23 novembre",
+  "url": "https://www.rtbf.be/article/les-trois-syndicats-appellent-a-une-nouvelle-manifestation-nationale-a-bruxelles-le-23-novembre-11803807"
+ },
+ "csc-23nov": {
+  "topic": "actualite",
+  "publisher": "CSC",
+  "date": "2026-10-21",
+  "title": "Nous ne subirons pas l'avenir, nous le construisons ensemble. Rendez-vous le 23 novembre à Bruxelles",
+  "url": "https://www.lacsc.be/actualite/actualites-et-communiques-de-presse/newsdetail/2026/10/21/nous-ne-subirons-pas-l-avenir--nous-le-construisons-ensemble--rendez-vous-le-23-novembre-a-bruxelles"
+ },
+ "vrt-23nov": {
+  "topic": "actualite",
+  "publisher": "VRT NWS",
+  "date": "2026-10-22",
+  "title": "Manifestation nationale en front commun syndical lundi 23 novembre à Bruxelles",
+  "url": "https://www.vrt.be/vrtnws/fr/2026/10/22/manifestation-nationale-en-front-commun-syndical-vendredi-23-nov/"
+ },
+ "lalibre-23nov": {
+  "topic": "actualite",
+  "publisher": "La Libre",
+  "date": "2026-10-21",
+  "title": "Les trois grands syndicats annoncent une nouvelle manifestation en front commun à Bruxelles",
+  "url": "https://www.lalibre.be/belgique/societe/2026/10/21/les-trois-grands-syndicats-prevoient-une-nouvelle-manifestation-a-bruxelles-P7YLHTZAZRCBBJLSYOCP4JO26I/"
+ },
+ "hralert-23nov": {
+  "topic": "actualite",
+  "publisher": "HR Alert",
+  "date": "2026-10-22",
+  "title": "Manifestation nationale à Bruxelles le 23 novembre",
+  "url": "https://www.hralert.be/news/manifestation-nationale-a-bruxelles-le-23-novembre/"
+ },
+ "dh-17nov": {
+  "topic": "actualite",
+  "publisher": "La DH",
+  "date": "2026-10-14",
+  "title": "Le 17 novembre, une nouvelle journée de mobilisation se profile : « Une grande grève dans l'enseignement »",
+  "url": "https://www.dhnet.be/actu/belgique/2026/10/14/le-17-novembre-une-nouvelle-journee-de-mobilisation-se-profile-une-grande-greve-dans-lenseignement-et-rassembler-un-maximum-autour-de-nous-NHZSGDGQP5CK3DD3G6B3VB24E4/"
+ },
+ "bx1-17nov": {
+  "topic": "actualite",
+  "publisher": "BX1",
+  "date": "2026-10-15",
+  "title": "Enseignement : une nouvelle mobilisation prévue le 17 novembre",
+  "url": "https://bx1.be/categories/news/enseignement-une-nouvelle-mobilisation-prevue-le-17-novembre/"
+ },
+ "csc-ens-17nov": {
+  "topic": "actualite",
+  "publisher": "CSC-Enseignement",
+  "date": "",
+  "title": "Action : l'enseignement, c'est essentiel",
+  "url": "https://www.lacsc.be/csc-enseignement/actualites/csc-enseignement-actualites-action-enseignement-essentiel"
+ },
+ "csc-eleves": {
+  "topic": "actualite",
+  "publisher": "CSC-Enseignement",
+  "date": "2026-10-07",
+  "title": "Les élèves se mobilisent pour leur avenir et pour l'école",
+  "url": "https://www.lacsc.be/csc-enseignement/actualites/2026/10/07/les-eleves-se-mobilisent-pour-leur-avenir-et-pour-l-ecole"
+ },
+ "vrt-crise": {
+  "topic": "actualite",
+  "publisher": "VRT NWS",
+  "date": "2026-11-02",
+  "title": "Begrotingsoverleg (voorlopig) mislukt: hoe is het zover kunnen komen? En wat nu?",
+  "url": "https://www.vrt.be/vrtnws/nl/2026/11/02/geen-begrotingsakkoord-politieke-crisis-overzicht"
+ },
+ "bruzz-crise": {
+  "topic": "actualite",
+  "publisher": "Bruzz",
+  "date": "2026-11-02",
+  "title": "Geen akkoord over federale begroting, premier De Wever trekt naar de koning",
+  "url": "https://www.bruzz.be/actua/politiek/geen-akkoord-over-federale-begroting-premier-trekt-naar-de-koning-2026-11-02"
+ },
+ "rtbf-crise": {
+  "topic": "actualite",
+  "publisher": "RTBF",
+  "date": "2026-11-02",
+  "title": "L'Arizona au pied du mur : la démission de Bart De Wever en suspens, le Roi entame ses entrevues",
+  "url": "https://www.rtbf.be/article/direct-crise-dans-le-gouvernement-arizona-bart-de-wever-a-remis-sa-demission-au-roi-qui-reserve-sa-decision-et-convoque-les-presidents-de-parti-11809122"
+ },
+ "touteleurope-crise": {
+  "topic": "actualite",
+  "publisher": "Touteleurope.eu",
+  "date": "",
+  "title": "Belgique : le Premier ministre Bart De Wever présente sa démission sur fond de crise budgétaire, le roi temporise",
+  "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/belgique-le-premier-ministre-bart-de-wever-presente-sa-demission-sur-fond-de-crise-budgetaire-le-roi-temporise/"
+ },
+ "rtbf-gel-index": {
+  "topic": "pouvoir-achat",
+  "publisher": "RTBF",
+  "date": "2026-10-15",
+  "title": "Budget : Bart De Wever propose de geler toutes les dépenses et les indexations en 2027",
+  "url": "https://www.rtbf.be/article/budget-bart-de-wever-propose-de-geler-toutes-les-depenses-et-les-indexations-en-2027-11801068"
+ },
+ "21news-tva": {
+  "topic": "pouvoir-achat",
+  "publisher": "21News",
+  "date": "2026-10-15",
+  "title": "De Wever-Bouchez : la TVA disparaît, mais le bras de fer budgétaire continue",
+  "url": "https://www.21news.be/de-wever-bouchez-la-tva-disparait-mais-le-bras-de-fer-budgetaire-continue/"
+ },
+ "lalibre-proposition": {
+  "topic": "pouvoir-achat",
+  "publisher": "La Libre",
+  "date": "2026-10-14",
+  "title": "Bart De Wever soumet une nouvelle proposition pour le budget fédéral",
+  "url": "https://www.lalibre.be/belgique/politique-belge/2026/10/14/budget-federal-bart-de-wever-soumet-une-nouvelle-proposition-5UTNC3NJLRFBXD5KKE6XOIR2CM/"
+ },
+ "rtbf-accord-2025": {
+  "topic": "pouvoir-achat",
+  "publisher": "RTBF",
+  "date": "2025-11-24",
+  "title": "TVA, indexation des salaires, épaules les plus larges… voici l'accord budgétaire du gouvernement De Wever",
+  "url": "https://www.rtbf.be/article/tva-indexation-des-salaires-epaules-les-plus-larges-voici-l-accord-budgetaire-du-gouvernement-de-wever-11636589"
+ },
+ "lexgo-centenindex": {
+  "topic": "pouvoir-achat",
+  "publisher": "Lexgo",
+  "date": "",
+  "title": "Nouvelles règles d'indexation ? L'« index en centimes » expliqué",
+  "url": "https://www.lexgo.be/en/news-and-articles/14494-new-rules-on-indexation-the-index-in-money-explained"
+ },
+ "mondaq-centenindex": {
+  "topic": "pouvoir-achat",
+  "publisher": "Mondaq",
+  "date": "",
+  "title": "Centenindex goedgekeurd door het federaal parlement",
+  "url": "https://www.mondaq.com/employee-benefits-compensation/1796636/centenindex-goedgekeurd-door-het-federaal-parlement"
+ },
+ "lexgo-norme": {
+  "topic": "pouvoir-achat",
+  "publisher": "Lexgo",
+  "date": "",
+  "title": "La marge maximale pour l'évolution du coût salarial pour 2025-2026 est fixée à 0 %",
+  "url": "https://www.lexgo.be/fr/actualites-et-articles/14378-la-marge-maximale-pour-l-evolution-du-cout-salarial-pour-la-periode-2025-2026-est-fixee-a-0-les-indexations-et-les-augmentations-baremiques-restent-toujours-garanties"
+ },
+ "businessam-inflation-oct": {
+  "topic": "pouvoir-achat",
+  "publisher": "Business AM",
+  "date": "2026-10-29",
+  "title": "L'inflation belge atteint 5,26 pour cent en octobre alors que les coûts de l'énergie s'envolent",
+  "url": "https://fr.businessam.be/?p=293519"
+ },
+ "businessam-inflation-aout": {
+  "topic": "pouvoir-achat",
+  "publisher": "Business AM",
+  "date": "2026-08-28",
+  "title": "L'inflation belge atteint 3,97 pour cent en août alors que les coûts de l'énergie s'envolent",
+  "url": "https://fr.businessam.be/?p=276167"
+ },
+ "te-inflation-oct": {
+  "topic": "pouvoir-achat",
+  "publisher": "Trading Economics (données Statbel)",
+  "date": "2026-10-29",
+  "title": "Belgium Inflation Rate Quickens Further in October",
+  "url": "https://tradingeconomics.com/belgium/inflation-cpi/news/596258"
+ },
+ "fgtb-2026": {
+  "topic": "mobilisation",
+  "publisher": "FGTB",
+  "date": "2025-12-09",
+  "title": "Le mouvement social se poursuivra dès le début 2026",
+  "url": "https://fgtb.be/presse/le-mouvement-social-se-poursuivra-des-le-debut-2026"
+ },
+ "lavenir-pensions": {
+  "topic": "pensions",
+  "publisher": "L'Avenir",
+  "date": "2026-05-29",
+  "title": "La réforme des pensions adoptée : voici ce qui change pour votre départ à la retraite",
+  "url": "https://www.lavenir.net/actu/societe/2026/05/29/la-reforme-des-pensions-adoptee-voici-ce-qui-change-pour-votre-depart-a-la-retraite-et-votre-portefeuille-3AZ25YM37BGQJLUVSNSE6TAEEM/"
+ },
+ "lavenir-pensions-accord": {
+  "topic": "pensions",
+  "publisher": "L'Avenir",
+  "date": "2026-03-06",
+  "title": "Accord final sur la réforme des pensions : malus, seuil de 156 jours… ce qui va concrètement changer",
+  "url": "https://www.lavenir.net/actu/belgique/politique/2026/03/06/accord-final-sur-la-reforme-des-pensions-malus-seuil-de-156-jours-ce-qui-va-concretement-changer-ISG37766QNAIHJM2HLZFV2MI6Y/"
+ },
+ "dh-pensions": {
+  "topic": "pensions",
+  "publisher": "La DH",
+  "date": "2026-05-29",
+  "title": "Réforme des pensions : voici ce qui va vraiment changer pour vous",
+  "url": "https://www.dhnet.be/actu/belgique/2026/05/29/reforme-des-pensions-voici-ce-qui-va-vraiment-changer-pour-vous-EPAQA3SW55BM5GFBOWHHT6IF7Q/"
+ },
+ "rtbf-bonus-malus": {
+  "topic": "pensions",
+  "publisher": "RTBF",
+  "date": "",
+  "title": "Ce qui change en 2026 : le bonus pension, oui. Le malus, c'est pour 2027",
+  "url": "https://www.rtbf.be/article/ce-qui-change-en-2026-le-bonus-pension-oui-le-malus-c-est-pour-2027-11651253"
+ },
+ "csc-temps-partiel": {
+  "topic": "pensions",
+  "publisher": "CSC",
+  "date": "2026-06-11",
+  "title": "380 000 travailleurs à temps partiel menacés par le « malus pension » de l'Arizona",
+  "url": "https://www.lacsc.be/page-dactualites/2026/06/11/380-000-travailleurs-a-temps-partiel-menaces-par-le---malus-pension---de-l-arizona"
+ },
+ "lavenir-jambon": {
+  "topic": "pensions",
+  "publisher": "L'Avenir",
+  "date": "2026-04-28",
+  "title": "« Cette réforme n'amène pas de hausse significative de la pauvreté » : Jan Jambon a défendu sa réforme des pensions",
+  "url": "https://www.lavenir.net/actu/belgique/politique/2026/04/28/cette-reforme-namene-pas-de-hausse-significative-de-la-pauvrete-jan-jambon-a-defendu-point-par-point-sa-reforme-des-pensions-HJZ3VBUGH5HWPJOPS6PA7KKOYY/"
+ },
+ "rtbf-chomage-vagues": {
+  "topic": "chomage",
+  "publisher": "RTBF",
+  "date": "",
+  "title": "Limitation dans le temps des allocations de chômage : qui sera exclu et quand ?",
+  "url": "https://www.rtbf.be/article/limitation-dans-le-temps-des-allocations-de-chomage-qui-sera-exclu-et-quand-11623311"
+ },
+ "lalibre-exclus": {
+  "topic": "chomage",
+  "publisher": "La Libre",
+  "date": "2026-02-19",
+  "title": "Diplôme, région, âge, genre… Qui sont les 168.063 personnes exclues du chômage ?",
+  "url": "https://www.lalibre.be/belgique/2026/02/19/diplome-region-age-genre-qui-sont-les-168063-personnes-exclues-du-chomage-OJ3FFUPM4VG7ZAJ7RIO324JRXM/"
+ },
+ "onem-reforme": {
+  "topic": "chomage",
+  "publisher": "ONEM",
+  "date": "2025-08-13",
+  "title": "Réforme du chômage : qu'est-ce qui change ?",
+  "url": "https://www.onem.be/actualites/2025/08/13/reforme-du-chomage-qu-est-ce-qui-change-"
+ },
+ "jubel-ete": {
+  "topic": "travail",
+  "publisher": "Jubel",
+  "date": "",
+  "title": "Accord d'été 2025 : évolution vers un travail flexible et une pension soutenable",
+  "url": "https://www.jubel.be/fr/accord-dete-2025-evolution-vers-travail-flexible-et-pension-soutenable/"
+ },
+ "forum-etat-arizona": {
+  "topic": "travail",
+  "publisher": "Deg & Partners",
+  "date": "",
+  "title": "État des lieux des mesures sociales Arizona au 15 décembre 2025",
+  "url": "https://blog.forumforthefuture.be/fr/article/etat-des-lieux-des-mesures-sociales-arizona-au-15-decembre-2015/29474"
+ },
+ "lalibre-alternatives": {
+  "topic": "alternatives",
+  "publisher": "La Libre",
+  "date": "2026-04-23",
+  "title": "Non, les coupes « brutales » dans la protection sociale et les services publics ne sont pas une fatalité : voici les alternatives des syndicats",
+  "url": "https://www.lalibre.be/belgique/2026/04/23/non-les-coupes-brutales-dans-la-protection-sociale-et-les-services-publics-ne-sont-pas-une-fatalite-voici-les-alternatives-des-syndicats-E32JDD43HNCJNPDIM2UDRPLPQU/"
+ },
+ "kairos-petition": {
+  "topic": "alternatives",
+  "publisher": "Kairos",
+  "date": "",
+  "title": "Fiscalité : le front commun syndical propose 21,2 milliards et appelle les citoyens à signer leur pétition",
+  "url": "https://kairoswb.com/actualite/belgique-societe-fiscalite-le-front-commun-syndical-propose-212-milliards-et-appelle-les-citoyens-a-signer-leur-petition/"
+ },
+ "petition-chambre": {
+  "topic": "alternatives",
+  "publisher": "Chambre des représentants",
+  "date": "",
+  "title": "Pétition du front commun syndical pour une fiscalité juste (plateforme de pétitions de la Chambre)",
+  "url": "https://dekamer.mijnopinie.belgium.be/initiatives/i-1307"
+ },
+ "forum-patrimoine": {
+  "topic": "alternatives",
+  "publisher": "BNB, via Forum for the Future",
+  "date": "",
+  "title": "Les chiffres interpellants de la distribution du patrimoine net des ménages fin 2024",
+  "url": "https://blog.forumforthefuture.be/fr/article/les-chiffres-interpellants-de-la-distribution-du-patrimoine-net-des-menages-fin-2024/27761"
+ },
+ "lalibre-1pct": {
+  "topic": "alternatives",
+  "publisher": "La Libre",
+  "date": "2025-05-27",
+  "title": "Les 1 % des Belges les plus riches possèdent autant que les 75 % les moins fortunés",
+  "url": "https://www.lalibre.be/economie/conjoncture/2025/05/27/les-1-des-belges-les-plus-riches-possedent-autant-que-les-75-les-moins-fortunes-LPLR5N7FGZCQ7E25QMITNU7HQE/"
+ },
+ "dh-inegalites-mort": {
+  "topic": "pensions",
+  "publisher": "La DH",
+  "date": "2020-12-17",
+  "title": "Le constat accablant : un pauvre sur trois mourra avant d'atteindre la retraite",
+  "url": "https://www.dhnet.be/actu/societe/2020/12/17/le-constat-accablant-un-pauvre-sur-trois-mourra-avant-datteindre-la-retraite-HCZIWI7LX5G3HFSTLEWYVETOKE/"
+ },
+ "parismatch-hly": {
+  "topic": "pensions",
+  "publisher": "Paris Match Belgique (Eurostat)",
+  "date": "2020-12-23",
+  "title": "Combien d'années de sa vie le Belge peut-il espérer vivre en bonne santé ?",
+  "url": "https://www.parismatch.be/actualites/sante/2020/12/23/combien-dannees-de-sa-vie-le-belge-peut-il-esperer-vivre-en-bonne-sante-XJQ7GT2GSNBBXHT6BMGUOFRB7M/"
+ },
+ "dh-deficit": {
+  "topic": "budget",
+  "publisher": "La DH (Eurostat)",
+  "date": "2026-04-22",
+  "title": "La Belgique affichait l'année dernière le plus gros déficit budgétaire de la zone euro",
+  "url": "https://www.dhnet.be/actu/economie/2026/04/22/la-belgique-affichait-lannee-derniere-le-plus-gros-deficit-budgetaire-de-la-zone-euro-ZARSIRABUZE5RCIB5BGT2FX4ME/"
+ },
+ "belga-deficit": {
+  "topic": "budget",
+  "publisher": "Belga",
+  "date": "",
+  "title": "Belgium's budget deficit heading towards 5 per cent of GDP",
+  "url": "https://belganewsagency.eu/belgiums-budget-deficit-heading-towards-5-per-cent-of-gdp"
+ },
+ "rtbf-9oct": {
+  "topic": "mobilisation",
+  "publisher": "RTBF",
+  "date": "2026-10-09",
+  "title": "Manifestation nationale : des dizaines de milliers de manifestants, un millier de casseurs, plus d'une centaine d'interpellations",
+  "url": "https://www.rtbf.be/article/direct-manifestation-nationale-de-ce-9-octobre-selon-la-fgtb-50-000-personnes-sont-presentes-a-bruxelles-11797028"
+ },
+ "lavenir-9oct": {
+  "topic": "mobilisation",
+  "publisher": "L'Avenir",
+  "date": "2026-10-09",
+  "title": "« Pas dans nos poches ! » : entre 30.000 et 50.000 Belges dans la rue contre les mesures de l'Arizona",
+  "url": "https://www.lavenir.net/actu/belgique/politique/2026/10/09/pas-dans-nos-poches-entre-30000-et-50000-belges-dans-la-rue-contre-les-mesures-de-larizona-42L7XI2SBNDMJND2FGN7FV5CJM/"
+ },
+ "csc-9oct": {
+  "topic": "mobilisation",
+  "publisher": "CSC",
+  "date": "2026-10-09",
+  "title": "La CSC fait entendre directement la voix des travailleurs aux partis de la majorité",
+  "url": "https://www.lacsc.be/page-dactualites/2026/10/09/la-csc-fait-entendre-directement-la-voix-des-travailleurs-aux-partis-de-la-majorite-----des-choix-equitables-sont-possibles"
+ },
+ "vrt-9oct-annonce": {
+  "topic": "mobilisation",
+  "publisher": "VRT NWS",
+  "date": "2026-09-08",
+  "title": "ABVV en ACV organiseren nationale actie tegen besparingsbeleid op 9 oktober",
+  "url": "https://www.vrt.be/vrtnws/nl/2026/09/08/abvv-kondigt-nationale-manifestatie-tegen-besparingsbeleid-aan-o/"
+ },
+ "moustique-griefs": {
+  "topic": "mobilisation",
+  "publisher": "Moustique",
+  "date": "2026-09-09",
+  "title": "Manifestation nationale contre l'Arizona : voici ce que les syndicats reprochent vraiment au gouvernement De Wever",
+  "url": "https://www.moustique.be/notre-epoque/les-infos/2026/09/09/manifestation-nationale-contre-larizona-le-910-voici-ce-que-les-syndicats-reprochent-vraiment-au-gouvernement-de-wever-JIMMGQSFM5GGFGUEAZ6IUIY7RM/"
+ },
+ "rtbf-12mars": {
+  "topic": "mobilisation",
+  "publisher": "RTBF",
+  "date": "2026-03-12",
+  "title": "Manifestation nationale : entre 80.000 et 100.000 personnes dans les rues de Bruxelles",
+  "url": "https://www.rtbf.be/article/manifestation-nationale-du-12-mars-des-milliers-de-manifestants-affluent-sur-la-petite-ceinture-11693238"
+ },
+ "eunews-12mars": {
+  "topic": "mobilisation",
+  "publisher": "Eunews",
+  "date": "2026-03-12",
+  "title": "Belgium has been on strike for months, with over 80,000 people taking to the streets today",
+  "url": "https://www.eunews.it/en/2026/03/12/belgium-has-been-on-strike-for-months-with-over-80000-people-taking-to-the-streets-today-to-protest-against-government-reforms/"
+ },
+ "rtbf-12mai": {
+  "topic": "mobilisation",
+  "publisher": "RTBF",
+  "date": "",
+  "title": "Manifestation nationale du 12 mai : vols annulés, transports perturbés, services au ralenti",
+  "url": "https://www.rtbf.be/article/manifestation-nationale-du-12-mai-vols-annules-transports-perturbes-services-au-ralenti-a-quoi-faut-il-s-attendre-11720491"
+ },
+ "euronews-12mai": {
+  "topic": "mobilisation",
+  "publisher": "Euronews",
+  "date": "2026-05-12",
+  "title": "Manifestation anti-gouvernementale en Belgique : au moins 40 000 participants à Bruxelles",
+  "url": "https://fr.euronews.com/2026/05/12/manifestation-anti-gouvernementale-en-belgique-au-moins-40-000-participants-a-bruxelles"
+ },
+ "bx1-13fev": {
+  "topic": "mobilisation",
+  "publisher": "BX1",
+  "date": "2025-02-13",
+  "title": "Manifestation nationale : dix-sept personnes arrêtées, selon un bilan de la police",
+  "url": "https://bx1.be/?p=735309"
+ },
+ "vrt-14oct": {
+  "topic": "mobilisation",
+  "publisher": "VRT NWS",
+  "date": "2025-10-14",
+  "title": "Entre 80 000 et 140 000 manifestants à Bruxelles",
+  "url": "https://www.vrt.be/vrtnws/fr/2025/10/14/entre-80-000-et-140-000-manifestants-a-bruxelles-la-police-a-f/"
+ },
+ "rtbf-12fev": {
+  "topic": "mobilisation",
+  "publisher": "RTBF",
+  "date": "",
+  "title": "Actions syndicales ce 12 février : voici les secteurs et les régions concernés",
+  "url": "https://www.rtbf.be/article/actions-syndicales-ce-12-fevrier-voici-les-secteurs-et-les-regions-concernes-11672796"
+ },
+ "lalibre-fgtb-juin": {
+  "topic": "mobilisation",
+  "publisher": "La Libre",
+  "date": "2026-06-12",
+  "title": "La FGTB continuera à se mobiliser à la rentrée et n'exclut pas une grève générale",
+  "url": "https://www.lalibre.be/belgique/politique-belge/2026/06/12/la-fgtb-continuera-a-se-mobiliser-a-la-rentree-et-nexclut-pas-une-greve-generale-WQSSCGPYXRHBPDERAJRQNPL33I/"
+ },
+ "dh-greves-nov2025": {
+  "topic": "mobilisation",
+  "publisher": "La DH",
+  "date": "2025-11-22",
+  "title": "Transports, administrations, écoles : le point sur les perturbations suite aux grèves ces 24, 25 et 26 novembre",
+  "url": "https://www.dhnet.be/actu/belgique/2025/11/22/transports-administrations-ecoles-le-point-sur-les-perturbations-suite-aux-greves-ces-24-25-et-26-novembre-QTT76E4BEZG3VGEVRODDZMAAUA/"
+ },
+ "euronews-greve-2025": {
+  "topic": "mobilisation",
+  "publisher": "Euronews",
+  "date": "2025-03-31",
+  "title": "Une grève nationale a paralysé la Belgique ce lundi",
+  "url": "https://fr.euronews.com/2025/03/31/une-greve-nationale-a-paralyse-la-belgique-ce-lundi"
+ },
+ "parismatch-17oct": {
+  "topic": "mobilisation",
+  "publisher": "Paris Match Belgique",
+  "date": "2026-10-18",
+  "title": "Manifestation à Bruxelles : 150 personnes interpellées après les affrontements",
+  "url": "https://www.parismatch.be/actualites/societe/2026/10/18/manifestation-a-bruxelles-150-personnes-interpellees-apres-les-affrontements-JYUK4OBQHFHSJDZFK543EZF5LA/"
+ },
+ "bx1-25jan": {
+  "topic": "mobilisation",
+  "publisher": "BX1",
+  "date": "2026-01-25",
+  "title": "Entre 6.500 et 8.000 personnes ont marché à Bruxelles pour l'avenir de l'école",
+  "url": "https://bx1.be/?p=795580"
+ },
+ "rtbf-synova": {
+  "topic": "syndicats",
+  "publisher": "RTBF",
+  "date": "",
+  "title": "Ne dites plus syndicat libéral mais syndicat libre : la CGSLB devient Synova",
+  "url": "https://www.rtbf.be/article/ne-dites-plus-syndicat-liberal-mais-syndicat-libre-la-cgslb-devient-synova-11732366"
+ },
+ "eurofound-be": {
+  "topic": "syndicats",
+  "publisher": "Eurofound",
+  "date": "",
+  "title": "Working life country profile for Belgium — actors and institutions",
+  "url": "https://www.eurofound.europa.eu/countries/belgium/actors-and-institutions"
+ },
+ "droitsquotidiens-arrest": {
+  "topic": "droits",
+  "publisher": "Droits Quotidiens",
+  "date": "2026-10-19",
+  "title": "Manifestation : arrestation administrative et judiciaire, quelles différences ?",
+  "url": "https://www.droitsquotidiens.be/fr/actualites/manifestation-arrestation-administrative-et-judiciaire-quelles-differences"
+ },
+ "csc-indemnite": {
+  "topic": "droits",
+  "publisher": "CSC",
+  "date": "",
+  "title": "FAQ indemnités de grève",
+  "url": "https://www.lacsc.be/affiliation/vos-avantages/faq-indemnites-de-greve"
+ },
+ "degand-greve": {
+  "topic": "droits",
+  "publisher": "Deg & Partners",
+  "date": "",
+  "title": "Journée d'action syndicale du 12 mai 2026 : guide opérationnel de l'employeur",
+  "url": "https://blog.forumforthefuture.be/fr/article/journee-daction-syndicale-du-12-mai-2026-guide-operationnel-de-lemployeur/31171"
+ },
+ "bx1-interdiction-2023": {
+  "topic": "droits",
+  "publisher": "BX1",
+  "date": "2023-12-07",
+  "title": "Le gouvernement renonce à l'interdiction de manifester",
+  "url": "https://bx1.be/categories/news/le-gouvernement-renonce-a-linterdiction-de-manifester/"
+ },
+ "bx1-casseur-payeur": {
+  "topic": "droits",
+  "publisher": "BX1",
+  "date": "2026-06-08",
+  "title": "Violences lors de manifestations : Bernard Quintin réclame l'adoption rapide de la loi « casseur-payeur »",
+  "url": "https://bx1.be/categories/news/violences-lors-de-manifestations-bernard-quintin-reclame-ladoption-rapide-de-la-loi-casseur-payeur/"
+ },
+ "bx1-dissolution": {
+  "topic": "droits",
+  "publisher": "BX1",
+  "date": "2025-07-25",
+  "title": "Interdiction des organisations radicales : la Ligue des droits humains s'inquiète du projet",
+  "url": "https://bx1.be/categories/news/interdiction-des-organisations-radicales-la-ligue-des-droits-humains-sinquiete-du-projet/"
+ },
+ "wiki-1886": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "Belgian strike of 1886",
+  "url": "https://en.wikipedia.org/wiki/Belgian_strike_of_1886"
+ },
+ "rtbf-roux": {
+  "topic": "histoire",
+  "publisher": "RTBF",
+  "date": "",
+  "title": "Il y a 140 ans, le massacre de Roux : dix-neuf ouvriers grévistes tués par l'armée",
+  "url": "https://www.rtbf.be/article/il-y-a-140-ans-le-massacre-de-roux-dix-neuf-ouvriers-grevistes-tues-par-l-armee-11701115"
+ },
+ "wiki-1893": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "Belgian general strike of 1893",
+  "url": "https://en.wikipedia.org/wiki/Belgian_general_strike_of_1893"
+ },
+ "wiki-1913": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "Belgian general strike of 1913",
+  "url": "https://en.wikipedia.org/wiki/Belgian_general_strike_of_1913"
+ },
+ "wiki-greves-be": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "General strikes in Belgium",
+  "url": "https://en.wikipedia.org/wiki/General_strikes_in_Belgium"
+ },
+ "wiki-1936": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "Belgian general strike of 1936",
+  "url": "https://en.wikipedia.org/wiki/Belgian_general_strike_of_1936"
+ },
+ "rtbf-conges-payes": {
+  "topic": "histoire",
+  "publisher": "RTBF",
+  "date": "",
+  "title": "Les congés payés en Belgique ont 75 ans",
+  "url": "https://www.rtbf.be/article/les-conges-payes-en-belgique-ont-75-ans-6371923"
+ },
+ "carhop-rtt": {
+  "topic": "histoire",
+  "publisher": "CARHOP",
+  "date": "",
+  "title": "Exposition : la réduction du temps de travail (centenaire de la journée des 8 heures)",
+  "url": "https://carhop.be/wp-content/uploads/2026/07/2021-expo-rtt-roucloux_compressed.pdf"
+ },
+ "cambridge-droit-travail": {
+  "topic": "histoire",
+  "publisher": "Cambridge University Press",
+  "date": "",
+  "title": "Introduction to Belgian Labour Law — Historical overview",
+  "url": "https://cambridge.org/core/books/abs/introduction-to-belgian-labour-law/historical-overview/01D5E18AE5D543A1B4B40EABE801440B"
+ },
+ "secu-histoire": {
+  "topic": "histoire",
+  "publisher": "Sécurité sociale (portail fédéral)",
+  "date": "",
+  "title": "Histoire de la sécurité sociale",
+  "url": "https://www.socialsecurity.be/citizen/fr/a-propos-de-la-securite-sociale/histoire"
+ },
+ "wiki-1960": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "Belgian general strike of 1960–1961",
+  "url": "https://en.wikipedia.org/wiki/Belgian_general_strike_of_1960%E2%80%931961"
+ },
+ "rtbf-1960": {
+  "topic": "histoire",
+  "publisher": "RTBF",
+  "date": "",
+  "title": "Hiver 1960, la Belgique est à l'arrêt : retour sur la grève du siècle",
+  "url": "https://www.rtbf.be/article/hiver-1960-la-belgique-est-a-l-arret-retour-sur-la-greve-du-siecle-10678121"
+ },
+ "carhop-1960": {
+  "topic": "histoire",
+  "publisher": "CARHOP",
+  "date": "",
+  "title": "La grève de 1960-1961",
+  "url": "https://www.carhop.be/images/Greve_1960-1961_R.DRESSE_2011.pdf"
+ },
+ "nvdb-1960": {
+  "topic": "histoire",
+  "publisher": "Global Nonviolent Action Database",
+  "date": "",
+  "title": "Belgian workers strike against austerity, 1960-61",
+  "url": "https://nvdatabase.swarthmore.edu/content/belgian-workers-strike-against-austerity-1960-61-winter-strike"
+ },
+ "csc-fn1966": {
+  "topic": "histoire",
+  "publisher": "CSC Liège-Verviers-Ostbelgien",
+  "date": "",
+  "title": "La grève des femmes de la FN en 1966",
+  "url": "https://www.lacsc.be/csc-liege-verviers-ostbelgien/activites/nos-groupes-specifiques/les-femmes-csc/greve-des-femmes-de-la-fn-en-1966"
+ },
+ "carhop-fn1966": {
+  "topic": "histoire",
+  "publisher": "CARHOP",
+  "date": "",
+  "title": "1966. Grève des ouvrières de la FN, à Herstal",
+  "url": "https://www.carhop.be/images/1966_GREVE_FN_Herstal_MTC_2005.pdf"
+ },
+ "afp-2014": {
+  "topic": "histoire",
+  "publisher": "AFP (via WMC)",
+  "date": "2014-11-06",
+  "title": "Belgique : manifestation monstre contre l'austérité et le gouvernement de droite",
+  "url": "https://www.webmanagercenter.com/2014/11/06/156611/belgique-manifestation-monstre-contre-l-austerite-et-le-gouvernement-de-droite/"
+ },
+ "afp-2014-greve": {
+  "topic": "histoire",
+  "publisher": "AFP (via WMC)",
+  "date": "2014-12-15",
+  "title": "La Belgique paralysée par une grève nationale contre l'austérité",
+  "url": "https://www.webmanagercenter.com/2014/12/15/158145/la-belgique-paralysee-par-une-greve-nationale-contre-l-austerite"
+ },
+ "wiki-matignon": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "Matignon Agreements (1936)",
+  "url": "https://en.wikipedia.org/wiki/Matignon_Agreements_(1936)"
+ },
+ "wiki-grenelle": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "Grenelle agreements",
+  "url": "https://en.wikipedia.org/wiki/Grenelle_agreements"
+ },
+ "wiki-islande": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "1975 Icelandic women's strike",
+  "url": "https://en.wikipedia.org/wiki/1975_Icelandic_women%27s_strike"
+ },
+ "wiki-gdansk": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "August Agreements (Gdańsk, 1980)",
+  "url": "https://en.wikipedia.org/wiki/August_Agreements"
+ },
+ "wiki-mineurs": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "1984–1985 United Kingdom miners' strike",
+  "url": "https://en.wikipedia.org/wiki/1984%E2%80%931985_United_Kingdom_miners%27_strike"
+ },
+ "wiki-1995": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "1995 strikes in France",
+  "url": "https://en.wikipedia.org/wiki/1995_strikes_in_France"
+ },
+ "wiki-cpe": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "First Employment Contract (CPE, 2006)",
+  "url": "https://en.wikipedia.org/wiki/First_Employment_Contract"
+ },
+ "wiki-haymarket": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "Haymarket affair",
+  "url": "https://en.wikipedia.org/wiki/Haymarket_affair"
+ },
+ "wiki-commune": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "Paris Commune",
+  "url": "https://en.wikipedia.org/wiki/Paris_Commune"
+ },
+ "wiki-lawrence": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "Lawrence textile strike (1912)",
+  "url": "https://en.wikipedia.org/wiki/Lawrence_textile_strike"
+ },
+ "wiki-1926": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "1926 United Kingdom general strike",
+  "url": "https://en.wikipedia.org/wiki/1926_United_Kingdom_general_strike"
+ },
+ "wiki-flint": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "Flint sit-down strike",
+  "url": "https://en.wikipedia.org/wiki/Flint_sit-down_strike"
+ },
+ "wiki-montgomery": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "Montgomery bus boycott",
+  "url": "https://en.wikipedia.org/wiki/Montgomery_bus_boycott"
+ },
+ "wiki-hot-autumn": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "Hot Autumn (Italie, 1969)",
+  "url": "https://en.wikipedia.org/wiki/Hot_Autumn"
+ },
+ "wiki-france-2023": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "2023 French pension reform unrest",
+  "url": "https://en.wikipedia.org/wiki/2023_French_pension_reform_unrest"
+ },
+ "wiki-uaw-2023": {
+  "topic": "histoire",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "2023 United Auto Workers strike",
+  "url": "https://en.wikipedia.org/wiki/2023_United_Auto_Workers_strike"
+ },
+ "lafinance-suspension": {
+  "topic": "histoire",
+  "publisher": "La finance pour tous",
+  "date": "2025-10-16",
+  "title": "Retraites : suspension de la réforme des retraites de 2023",
+  "url": "https://www.lafinancepourtous.com/2025/10/16/retraites-suspension-de-la-reforme-des-retraites-de-2023/"
+ },
+ "cfdt-suspension": {
+  "topic": "histoire",
+  "publisher": "CFDT Retraités",
+  "date": "",
+  "title": "Suspension de la réforme des retraites et nouvelles mesures",
+  "url": "https://www.xn--cfdt-retraits-mhb.fr/Suspension-reforme-des-retraites-et-nouvelles-mesures-reformant-retraites"
+ },
+ "wiki-35": {
+  "topic": "analyse",
+  "publisher": "Wikipédia",
+  "date": "",
+  "title": "3.5% rule (Chenoweth)",
+  "url": "https://en.wikipedia.org/wiki/3.5%25_rule"
+ },
+ "rtbf-cpas": {
+  "topic": "chomage",
+  "publisher": "RTBF",
+  "date": "",
+  "title": "Exclusions du chômage : combien de personnes se tournent vers le CPAS près de chez vous ?",
+  "url": "https://www.rtbf.be/article/exclusions-du-chomage-combien-de-personnes-se-tournent-vers-le-cpas-pres-de-chez-vous-decouvrez-le-sur-notre-carte-11755346"
+ },
+ "bx1-voiture": {
+  "topic": "mobilisation",
+  "publisher": "BX1",
+  "date": "",
+  "title": "Manifestation du 12 mai : la police déconseille de se rendre à Bruxelles en voiture",
+  "url": "https://bx1.be/categories/news/manifestation-du-12-mai-la-police-deconseille-de-se-rendre-a-bruxelles-en-voiture/"
+ },
+ "bx1-enseignants-juin": {
+  "topic": "mobilisation",
+  "publisher": "La DH",
+  "date": "2026-06-08",
+  "title": "Des milliers d'élèves et de profs à Bruxelles contre les violences policières et pour l'enseignement",
+  "url": "https://www.dhnet.be/actu/belgique/2026/06/08/70-de-mes-eleves-se-sont-fait-gazer-sans-raison-des-milliers-deleves-et-des-profs-a-bruxelles-contre-les-violences-policieres-et-pour-lenseignement-4LMCFNRIL5HX3DUPI6YMEQZCKE/"
+ },
+ "parismatch-budget-wallon": {
+  "topic": "services-publics",
+  "publisher": "Paris Match Belgique",
+  "date": "2025-10-20",
+  "title": "Avec son nouveau budget et ses économies, le gouvernement wallon met un frein clair aux recrutements",
+  "url": "https://www.parismatch.be/actualites/economie/2025/10/20/avec-son-nouveau-budget-et-ses-economies-le-gouvernement-wallon-met-un-frein-clair-aux-recrutements-il-faudra-faire-mieux-avec-autant-MKZW6TBVUFGKDN7VKUY7JDPLFY/"
+ },
+ "lalibre-namur-juin": {
+  "topic": "services-publics",
+  "publisher": "La Libre",
+  "date": "2026-06-16",
+  "title": "Namur : des milliers de manifestants contre la politique budgétaire du gouvernement wallon",
+  "url": "https://www.lalibre.be/belgique/enseignement/2026/06/16/namur-des-milliers-de-manifestants-contre-la-politique-budgetaire-du-gouvernement-wallon-UAYS2HMT2VDPVER6TK3FJOWOGY/"
+ },
+ "rtbf-comite-p": {
+  "topic": "droits",
+  "publisher": "RTBF",
+  "date": "2025-10-16",
+  "title": "Interventions policières à la manifestation nationale : 13 plaintes déposées au Comité P",
+  "url": "https://www.rtbf.be/article/interventions-policieres-a-la-manifestation-nationale-13-plaintes-deposees-au-comite-p-11617488"
+ }
+}
