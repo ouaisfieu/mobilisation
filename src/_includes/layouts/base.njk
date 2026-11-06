@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="{{ lang or site.lang }}" data-root="{{ page.url | relRoot }}" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{%- if page.url == "/404.html" %}
+<base href='{{ site.url | urlPath }}'>{% endif %}
+{%- set pageTitle = (title + " · " + site.name) if (title and page.url != "/") else site.title %}
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ description or site.description }}">
+<link rel="canonical" href="{{ page.url | absUrl(site.url) }}">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f4efe6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12110f" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="{{ ogType or 'website' }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ ogLocale or site.locale }}">
+<meta property="og:title" content="{{ title or site.title }}">
+<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:url" content="{{ page.url | absUrl(site.url) }}">
+<meta property="og:image" content="{{ ('/assets/og/' + (ogImage or 'og-default.png')) | absUrl(site.url) }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ ogAlt or 'Lundi 23 novembre 2026 : manifestation nationale à Bruxelles' }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="alternate" type="application/atom+xml" title="Actualités de la mobilisation" href="/feed.xml">
+<link rel="alternate" type="text/calendar" title="Agenda de la mobilisation" href="/agenda.ics">
+{%- if alternates %}{% for a in alternates %}
+<link rel="alternate" hreflang="{{ a.lang }}" href="{{ a.url | absUrl(site.url) }}">{% endfor %}{% endif %}
+<link rel="preload" href="/assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/atkinson-next-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+<script>
+(function(){var d=document.documentElement;d.classList.remove('no-js');d.classList.add('js');
+try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script src="/assets/js/main.js" defer></script>
+{%- if scripts %}{% for s in scripts %}
+<script src="/assets/js/{{ s }}" defer></script>{% endfor %}{% endif %}
+{%- if jsonld %}
+<script type="application/ld+json">{{ jsonld | json | safe }}</script>{% endif %}
+</head>
+<body class="{{ bodyClass or '' }}">
+<a class="skip" href="#contenu">Aller au contenu</a>
+{% include "partials/header.njk" %}
+<main id="contenu" tabindex="-1"{% if page.url != "/404.html" %} data-pagefind-body{% endif %}>
+{{ content | safe }}
+</main>
+{% include "partials/footer.njk" %}
+<dialog class="search" id="recherche" aria-labelledby="recherche-titre">
+  <div class="search__head">
+    <p class="search__title" id="recherche-titre">Rechercher sur le site</p>
+    <form method="dialog"><button class="iconbtn" aria-label="Fermer la recherche">{% icon "x" %}</button></form>
+  </div>
+  <div id="search-ui" class="search__ui" data-base="/"></div>
+  <p class="search__hint">La recherche fonctionne entièrement dans ton navigateur : rien n'est envoyé à un serveur.</p>
+</dialog>
+<div class="tip" role="tooltip" id="tip" hidden></div>
+<div class="toast" role="status" aria-live="polite" id="toast" hidden></div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/essay.njk",
+  "tags": [],
+  "permalink": "/analyses/{{ page.fileSlug }}/"
+}

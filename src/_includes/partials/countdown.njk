@@ -1,0 +1,7 @@
+{%- set cdTarget = countdownDate or site.main.date %}
+<div class="countdown" data-countdown="{{ cdTarget }}" data-done="C'est aujourd'hui. On y va !" aria-label="Compte à rebours jusqu'au {{ cdTarget | dateLong }}">
+  <div class="countdown__unit"><span class="countdown__n" data-u="d">–</span><span class="countdown__l">jours</span></div>
+  <div class="countdown__unit"><span class="countdown__n" data-u="h">–</span><span class="countdown__l">heures</span></div>
+  <div class="countdown__unit"><span class="countdown__n" data-u="m">–</span><span class="countdown__l">min</span></div>
+  <div class="countdown__unit countdown__unit--s"><span class="countdown__n" data-u="s">–</span><span class="countdown__l">s</span></div>
+</div>

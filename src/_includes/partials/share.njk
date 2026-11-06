@@ -1,0 +1,16 @@
+{%- set shareUrl = (shareUrlPath or page.url) | absUrl(site.url) %}
+{%- set shareText = shareMsg or "Lundi 23 novembre, manifestation nationale à Bruxelles. Les raisons, l'agenda, l'histoire et tout pour s'organiser :" %}
+<div class="share" data-pagefind-ignore data-share data-url="{{ shareUrl }}" data-text="{{ shareText }}">
+  <p class="share__label">{{ shareLabel or "Fais passer le mot" }}</p>
+  <div class="share__btns">
+    <button type="button" class="chip chip--strong" data-share-native hidden>{% icon "share" %} Partager</button>
+    <a class="chip" href="https://wa.me/?text={{ (shareText + ' ' + shareUrl) | urlencode }}" rel="noopener" target="_blank">WhatsApp</a>
+    <a class="chip" href="https://t.me/share/url?url={{ shareUrl | urlencode }}&amp;text={{ shareText | urlencode }}" rel="noopener" target="_blank">Telegram</a>
+    <a class="chip" href="https://www.facebook.com/sharer/sharer.php?u={{ shareUrl | urlencode }}" rel="noopener" target="_blank">Facebook</a>
+    <a class="chip" href="https://bsky.app/intent/compose?text={{ (shareText + ' ' + shareUrl) | urlencode }}" rel="noopener" target="_blank">Bluesky</a>
+    <a class="chip" href="https://x.com/intent/tweet?text={{ shareText | urlencode }}&amp;url={{ shareUrl | urlencode }}" rel="noopener" target="_blank">X</a>
+    <a class="chip" href="https://www.linkedin.com/sharing/share-offsite/?url={{ shareUrl | urlencode }}" rel="noopener" target="_blank">LinkedIn</a>
+    <a class="chip" href="mailto:?subject={{ 'Le 23 novembre, on y va ?' | urlencode }}&amp;body={{ (shareText + ' ' + shareUrl) | urlencode }}">E-mail</a>
+    <button type="button" class="chip" data-copy="{{ shareUrl }}">{% icon "copy" %} Copier le lien</button>
+  </div>
+</div>

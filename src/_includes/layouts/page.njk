@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+---
+<header class="pagehead{% if headTone %} pagehead--{{ headTone }}{% endif %}">
+  <div class="wrap">
+    {%- if kicker %}<p class="kicker">{{ kicker }}</p>{% endif %}
+    <h1 class="pagehead__title">{{ heading or title }}</h1>
+    {%- if lead %}<p class="pagehead__lead">{{ lead | safe }}</p>{% endif %}
+    {%- if updatedNote %}<p class="pagehead__meta">{% icon "clock" %} {{ updatedNote }}</p>{% endif %}
+  </div>
+</header>
+<div class="page{% if wide %} page--wide{% endif %}">
+{{ content | safe }}
+</div>
+{%- if not hideCta %}
+{% include "partials/cta.njk" %}
+{%- endif %}

@@ -1,0 +1,34 @@
+<footer class="footer">
+  <div class="stripe" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="wrap footer__in">
+    <div class="footer__brand">
+      <p class="footer__name">Mobilisation <span>novembre 2026</span></p>
+      <p class="footer__tag">{{ site.tagline }}</p>
+      <p class="footer__disclaimer"><strong>Site citoyen indépendant.</strong> Il n'est affilié à aucune organisation syndicale ni à aucun parti. Pour les informations officielles (horaires, parcours, départs collectifs), réfère-toi toujours à la
+        {%- for o in site.official %} <a href="{{ o.url }}" rel="noopener">{{ o.name }}</a>{% if not loop.last %},{% endif %}{% endfor %}.</p>
+    </div>
+    <nav class="footer__col" aria-label="Pages pratiques">
+      <p class="footer__title">Pratique</p>
+      <ul>
+        {%- for item in nav.secondary %}<li><a href="{{ item.url }}">{{ item.label }}</a></li>{% endfor %}
+      </ul>
+    </nav>
+    <div class="footer__col">
+      <p class="footer__title">Données ouvertes</p>
+      <ul>
+        <li><a href="/agenda.ics">{% icon "calendar" %} Agenda (.ics)</a></li>
+        <li><a href="/feed.xml">{% icon "rss" %} Flux des actualités</a></li>
+        <li><a href="/api/">{% icon "download" %} API JSON</a></li>
+        <li><a href="{{ site.repo }}" rel="noopener">{% icon "github" %} Code source</a></li>
+      </ul>
+      <p class="footer__title">Langues</p>
+      <ul class="footer__langs">
+        <li><a href="/" hreflang="fr" lang="fr">Français</a></li>
+        {%- for item in nav.lang %}<li><a href="{{ item.url }}" hreflang="{{ item.lang }}" lang="{{ item.lang }}">{{ item.label }}</a></li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__meta">
+    <p>Aucun traceur, aucune publicité, aucun cookie. Textes sous licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener license">CC BY-SA 4.0</a> — copie, partage et adapte librement. Mise à jour : {{ site.updated | dateShort }}.</p>
+  </div>
+</footer>

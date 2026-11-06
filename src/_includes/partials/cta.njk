@@ -1,0 +1,16 @@
+<section class="ctaband" aria-labelledby="cta-titre" data-pagefind-ignore>
+  <div class="wrap ctaband__in">
+    <div>
+      <p class="kicker kicker--light">{{ site.main.dateLabel }} · {{ site.main.city }}</p>
+      <h2 class="ctaband__title" id="cta-titre">Le 23, on remplit Bruxelles.</h2>
+      <p class="ctaband__text">Une rue pleine pèse sur le budget qui se décide maintenant. Viens avec tes collègues, tes voisin·es, ta famille.</p>
+    </div>
+    <div class="ctaband__actions">
+      {% include "partials/countdown.njk" %}
+      <div class="btnrow">
+        <a class="btn btn--light" href="/agir/">J'y vais : mode d'emploi {% icon "arrow" %}</a>
+        <a class="btn btn--ghost-light" href="/agenda.ics" download>{% icon "calendar" %} Ajouter au calendrier</a>
+      </div>
+    </div>
+  </div>
+</section>

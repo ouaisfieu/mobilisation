@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+ogType: article
+---
+{%- set all = collections.analyses %}
+{%- set idx = all | indexOfUrl(page.url) %}
+<header class="pagehead">
+  <div class="wrap">
+    <p class="kicker">Analyse n° {{ order }} · {{ content | readingTime }} min de lecture</p>
+    <h1 class="pagehead__title">{{ title }}</h1>
+    {%- if lead %}<p class="pagehead__lead">{{ lead | safe }}</p>{% endif %}
+  </div>
+</header>
+<div class="page">
+  <div class="wrap layout-aside">
+    <article class="prose">
+      {{ content | safe }}
+      <hr>
+      <p class="srcs">Cette analyse s'appuie sur les sources citées dans le texte. Repérée une erreur ? <a href="{{ site.repo }}/issues" rel="noopener">Signale-la</a> : on corrige.</p>
+    </article>
+    <aside class="toc" aria-label="Sommaire">
+      {%- set tocItems = content | toc %}
+      {%- if tocItems.length %}
+      <p class="toc__title">Dans cette analyse</p>
+      <ol>{% for h in tocItems %}<li><a href="#{{ h.id }}">{{ h.text }}</a></li>{% endfor %}</ol>
+      {%- endif %}
+      <p class="toc__title">Toutes les analyses</p>
+      <ol>{% for e in all %}<li><a href="{{ e.url }}"{% if e.url == page.url %} class="is-active" aria-current="page"{% endif %}>{{ e.data.title }}</a></li>{% endfor %}</ol>
+    </aside>
+  </div>
+  <div class="wrap">
+    <nav class="essay-nav" aria-label="Analyses précédente et suivante">
+      {%- if idx > 0 %}{% set prev = all[idx - 1] %}<a href="{{ prev.url }}"><small>Précédente</small>{{ prev.data.title }}</a>{% else %}<span></span>{% endif %}
+      {%- if idx < all.length - 1 %}{% set next = all[idx + 1] %}<a class="next" href="{{ next.url }}"><small>Suivante</small>{{ next.data.title }}</a>{% endif %}
+    </nav>
+    {% include "partials/share.njk" %}
+  </div>
+</div>
+{% include "partials/cta.njk" %}

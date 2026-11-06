@@ -1,0 +1,53 @@
+{%- set flash = news | where("flash", true) | first %}
+{%- if flash and not hideFlash %}
+<div class="flash">
+  <div class="wrap flash__in">
+    <span class="flash__tag">Actu · {{ flash.date | dayMonth }}</span>
+    <a class="flash__link" href="/actualites/#{{ flash.date }}">{{ flash.title }}</a>
+  </div>
+</div>
+{%- endif %}
+<header class="masthead">
+  <div class="wrap masthead__in">
+    <a class="brand" href="/" aria-label="Mobilisation — accueil">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="14" width="6" height="13" rx="1.5" fill="var(--fc-red)"/><rect x="13" y="9" width="6" height="18" rx="1.5" fill="var(--fc-green)"/><rect x="21" y="4" width="6" height="23" rx="1.5" fill="var(--fc-blue)"/></svg>
+      <span class="brand__name">Mobilisation</span>
+      <span class="brand__date">23·11</span>
+    </a>
+    <nav class="mainnav" aria-label="Navigation principale">
+      <ul>
+        {%- for item in nav.main %}
+        <li><a href="{{ item.url }}"{% if page.url.startsWith(item.url) %} aria-current="page"{% endif %}{% if item.cta %} class="mainnav__cta"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+    <div class="masthead__tools">
+      <button class="iconbtn" type="button" data-search-open aria-haspopup="dialog" aria-controls="recherche" title="Rechercher (touche /)">{% icon "search" %}<span class="sr-only">Rechercher</span></button>
+      <button class="iconbtn" type="button" data-theme-toggle title="Thème clair / sombre">{% icon "moon", "i-moon" %}{% icon "sun", "i-sun" %}<span class="sr-only">Changer de thème</span></button>
+      <button class="iconbtn menu-toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>{% icon "menu", "i-menu" %}{% icon "x", "i-close" %}<span class="sr-only">Menu</span></button>
+    </div>
+  </div>
+  <div class="menu" id="menu" data-menu>
+    <div class="wrap menu__in">
+      <div class="menu__col">
+        <p class="menu__title">Comprendre et agir</p>
+        <ul>
+          {%- for item in nav.main %}<li><a href="{{ item.url }}">{{ item.label }}</a></li>{% endfor %}
+        </ul>
+      </div>
+      <div class="menu__col">
+        <p class="menu__title">Pratique</p>
+        <ul>
+          {%- for item in nav.secondary %}<li><a href="{{ item.url }}">{{ item.label }}</a></li>{% endfor %}
+        </ul>
+      </div>
+      <div class="menu__col">
+        <p class="menu__title">Autres langues</p>
+        <ul>
+          {%- for item in nav.lang %}<li><a href="{{ item.url }}" hreflang="{{ item.lang }}" lang="{{ item.lang }}">{{ item.label }}</a></li>{% endfor %}
+        </ul>
+        <a class="btn btn--accent menu__cta" href="/agir/">Je rejoins la mobilisation {% icon "arrow" %}</a>
+      </div>
+    </div>
+  </div>
+</header>
