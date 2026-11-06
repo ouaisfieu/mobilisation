@@ -1,0 +1,21 @@
+{
+  "name": "mobilisation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site citoyen indépendant sur la mobilisation syndicale de novembre 2026 en Belgique",
+  "type": "module",
+  "scripts": {
+    "build": "eleventy && pagefind --site _site --glob \"**/*.html\"",
+    "start": "eleventy --serve",
+    "dev": "eleventy --serve --incremental",
+    "clean": "rm -rf _site"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.7",
+    "pagefind": "1.5.2"
+  }
+}
