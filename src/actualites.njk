@@ -1,0 +1,24 @@
+---
+layout: layouts/page.njk
+title: Actualités
+heading: Le fil de la mobilisation
+kicker: Actualités · mises à jour datées
+lead: "Les faits marquants, datés et sourcés. Abonne-toi au <a href=\"/feed.xml\">flux</a> pour suivre les mises à jour."
+description: "Actualités datées de la mobilisation syndicale de novembre 2026 et de la crise budgétaire du gouvernement fédéral."
+hideFlash: true
+---
+<div class="wrap narrow">
+  <p class="btnrow" style="margin-top:0"><a class="btn btn--small" href="/feed.xml">{% icon "rss" %} Flux Atom</a> <a class="btn btn--small" href="/api/news.json">{% icon "download" %} JSON</a></p>
+  <ol class="newslist" style="margin-top:1.5rem">
+    {%- for n in news %}
+    <li class="newsitem" id="{{ n.date }}">
+      <p class="newsitem__date">{{ n.date | dateShort }}</p>
+      <div>
+        <h2>{{ n.title }}</h2>
+        <p>{{ n.text }}</p>
+        {%- if n.sources.length %}<p class="srcs">{% srcs n.sources | join(",") %}</p>{% endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+</div>

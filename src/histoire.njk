@@ -1,0 +1,85 @@
+---
+layout: layouts/page.njk
+title: Histoire des luttes
+heading: Ce que la rue a gagné (et ce qu'elle a perdu)
+kicker: Histoire · 1871 – 2026
+headTone: ink
+lead: "Le droit de vote, la journée de 8 heures, les congés payés, la sécurité sociale : rien de ce qu'on défend aujourd'hui n'a été offert. Voici 150 ans de luttes sociales face au pouvoir, en Belgique et ailleurs — victoires et défaites comprises — et ce qu'elles nous apprennent pour le 23 novembre."
+description: "Frise interactive de 150 ans de luttes sociales en Belgique et dans le monde : grèves générales de 1893, 1913, 1936, 1960-61, la sécu de 1944, les femmes de la FN, Matignon, Grenelle, l'Islande 1975… et les leçons pour aujourd'hui."
+ogImage: og-histoire.png
+---
+{%- set resLabels = { "gagne": "Gagné", "partiel": "Victoire partielle", "differe": "Victoire différée", "perdu": "Perdu", "en-cours": "En cours" } %}
+{%- set resIcons = { "gagne": "check", "partiel": "scale", "differe": "clock", "perdu": "x", "en-cours": "spark" } %}
+{%- set themeLabels = { "suffrage": "Droit de vote", "libertes": "Libertés", "temps": "Temps de travail", "salaires": "Salaires", "secu": "Sécurité sociale", "pensions": "Pensions", "egalite": "Égalité", "austerite": "Austérité" } %}
+<div class="wrap">
+  <section aria-labelledby="lecons">
+    <h2 id="lecons">Huit leçons de 150 ans de luttes</h2>
+    <p class="section__lead">Les mouvements qui gagnent ne sont pas forcément les plus radicaux ni les plus nombreux : ce sont ceux qui réunissent certaines conditions. Les voici, avec les exemples de la frise ci-dessous.</p>
+    <ol class="lessons">
+      <li><h3>L'unité fait la force</h3><p>En 1936, syndicats socialistes et chrétiens côte à côte arrachent les congés payés en un mois. En 1960-61, la grève se brise sur la division entre Flandre et Wallonie. Le front commun CSC-FGTB-Synova est un atout précieux.</p></li>
+      <li><h3>Préparer, puis tenir</h3><p>En 1913, dix mois de préparation et des caisses de grève. À Montgomery, 381 jours de boycott. À l'inverse, les mobilisations trop courtes de 2005 et 2014 n'ont pas fait plier les gouvernements.</p></li>
+      <li><h3>Le nombre et la capacité de bloquer</h3><p>Le pouvoir des travailleurs, c'est que rien ne tourne sans eux. 200 000 grévistes en 1893, 90 % des Islandaises en 1975 : quand la société s'arrête, le pouvoir écoute.</p></li>
+      <li><h3>Élargir les alliances</h3><p>Étudiant·es et ouvriers en 1968, jeunes et syndicats contre le CPE en 2006. Les mineurs britanniques, isolés, ont perdu en 1985. Le 23 novembre, le front commun appelle toute la société civile.</p></li>
+      <li><h3>La discipline non violente</h3><p>Sur plus de 300 campagnes étudiées, la résistance civile non violente a réussi deux fois plus souvent que la lutte armée. La grève de 1913, disciplinée, a gagné ; la violence offre au pouvoir le prétexte qu'il attend.</p></li>
+      <li><h3>Saisir les fenêtres politiques</h3><p>Les mouvements gagnent quand les élites se divisent : en 1950, en France en 2025… et aujourd'hui, alors que la majorité se déchire sur le budget.</p></li>
+      <li><h3>Des revendications claires</h3><p>« À travail égal, salaire égal ». « La journée de 8 heures ». Une revendication simple, juste et gagnable rassemble et se mesure.</p></li>
+      <li><h3>Les victoires peuvent arriver plus tard</h3><p>1913 gagne en 1919. Haymarket gagne au XXe siècle. La réforme française de 2023 est suspendue en 2025. Une lutte « perdue » change souvent le rapport de force pour la suivante.</p></li>
+    </ol>
+    <p class="srcs" style="margin-top:1rem">Pour aller plus loin : <a href="/analyses/pourquoi-les-greves-gagnent/">Pourquoi les grèves gagnent (et pourquoi elles perdent)</a> · <a href="/analyses/contestation-et-pouvoir/">Contestation sociale et pouvoir</a>.</p>
+  </section>
+
+  <section aria-labelledby="frise" style="margin-top:3rem">
+    <h2 id="frise">La frise</h2>
+    <div class="filters" data-filters="tl-list" role="group" aria-label="Filtrer la frise">
+      <div class="filters__group">
+        <span class="filters__label">Où</span>
+        <button type="button" class="chip" data-filter-key="scope" data-filter-value="all" aria-pressed="true">Tout</button>
+        <button type="button" class="chip" data-filter-key="scope" data-filter-value="be" aria-pressed="false">Belgique</button>
+        <button type="button" class="chip" data-filter-key="scope" data-filter-value="monde" aria-pressed="false">Ailleurs</button>
+      </div>
+      <div class="filters__group">
+        <span class="filters__label">Issue</span>
+        <button type="button" class="chip" data-filter-key="result" data-filter-value="all" aria-pressed="true">Toutes</button>
+        {%- for k, v in resLabels %}
+        <button type="button" class="chip" data-filter-key="result" data-filter-value="{{ k }}" aria-pressed="false">{{ v }}</button>
+        {%- endfor %}
+      </div>
+      <div class="filters__group">
+        <span class="filters__label">Thème</span>
+        <button type="button" class="chip" data-filter-key="themes" data-filter-value="all" aria-pressed="true">Tous</button>
+        {%- for k, v in themeLabels %}
+        <button type="button" class="chip" data-filter-key="themes" data-filter-value="{{ k }}" aria-pressed="false">{{ v }}</button>
+        {%- endfor %}
+      </div>
+      <span class="filters__count" data-filter-count aria-live="polite">{{ timeline.length }} éléments</span>
+    </div>
+
+    <ol class="tl" id="tl-list">
+      {%- for t in timeline | sortBy("year") %}
+      <li class="tl__item" id="{{ t.id }}" data-filter-item data-scope="{{ t.scope }}" data-result="{{ t.result }}" data-themes="{{ t.themes | join(' ') }}">
+        <span class="tl__year">{{ t.year }}</span>
+        <article class="tl__card">
+          <p class="tl__meta">
+            <span class="badge">{{ "Belgique" if t.scope == "be" else "Ailleurs" }}</span>
+            <span>{{ t.date }}</span>
+            {%- for th in t.themes %}<span>· {{ themeLabels[th] }}</span>{% endfor %}
+          </p>
+          <h3 class="tl__title">{{ t.title }}</h3>
+          <p>{{ t.text }}</p>
+          <div class="tl__result">
+            <span class="res res--{{ t.result }}">{% icon resIcons[t.result] %} {{ resLabels[t.result] }}</span>
+            <span>{{ t.resultText }}</span>
+          </div>
+          <p class="tl__lesson">{{ t.lesson }}</p>
+          <p class="srcs">{% srcs t.sources | join(",") %}</p>
+        </article>
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+  <div class="callout callout--accent">
+    <p class="callout__title">Et maintenant ?</p>
+    <p>Chaque ligne de cette frise a commencé par des gens qui ont décidé d'y aller. La prochaine s'écrit le <strong>lundi 23 novembre à Bruxelles</strong>. <a href="/agir/">Voici comment en être.</a></p>
+  </div>
+  {% include "partials/share.njk" %}
+</div>

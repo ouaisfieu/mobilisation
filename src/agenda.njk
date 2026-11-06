@@ -1,0 +1,68 @@
+---
+layout: layouts/page.njk
+title: Agenda
+heading: Les rendez-vous de la mobilisation
+kicker: Agenda · novembre 2026
+lead: "Trois dates en une semaine, un point d'orgue le <strong>lundi 23 novembre à Bruxelles</strong>. Ajoute-les à ton calendrier, préviens ton entourage, organise ton départ."
+description: "L'agenda de la mobilisation syndicale de novembre 2026 : 17 novembre (enseignement), 18 novembre (Namur), 23 novembre (manifestation nationale à Bruxelles). Export calendrier inclus."
+ogImage: og-agenda.png
+updatedNote: "Agenda vérifié le 6 novembre 2026. Les horaires et lieux de départ seront ajoutés dès leur annonce officielle."
+---
+<div class="wrap">
+  <div class="split split--wide-right">
+    <div>
+      <h2>Le 23 novembre, ce qu'on sait</h2>
+      <ul class="facts">
+        <li><strong>Quoi :</strong> manifestation nationale en front commun syndical — CSC, FGTB et Synova ensemble, avec les mutualités et la société civile. {% src "rtbf-23nov" %}</li>
+        <li><strong>Quand :</strong> lundi 23 novembre 2026. Un jour de semaine : renseigne-toi auprès de ta délégation sur le préavis de grève qui couvre ton secteur.</li>
+        <li><strong>Où :</strong> Bruxelles. Heure et point de départ à confirmer par les organisations.</li>
+        <li><strong>Qui :</strong> tout le monde. Le front commun invite explicitement associations, jeunes, étudiant·es, pensionné·es, mouvements féministes et environnementaux, acteurs culturels. {% src "csc-23nov" %}</li>
+        <li><strong>Pourquoi :</strong> refuser que l'ajustement des finances publiques se fasse « une fois de plus sur le dos des travailleurs, des allocataires sociaux et des services publics ». {% src "lalibre-23nov" %}</li>
+      </ul>
+      {% callout "Information officielle", "warn" %}<p>Ce site est indépendant. Pour l'heure, le parcours et les départs collectifs, réfère-toi aux sites de la <a href="https://www.lacsc.be/" rel="noopener">CSC</a>, de la <a href="https://fgtb.be/" rel="noopener">FGTB</a> et de <a href="https://www.synova.be/fr/nouveau-nom" rel="noopener">Synova</a>, ou demande directement à ta délégation syndicale.</p>{% endcallout %}
+    </div>
+    <div>
+      <div class="chart">
+        <p class="chart__title">Ajoute la mobilisation à ton agenda</p>
+        <p class="chart__sub">Fichiers .ics compatibles avec Google Agenda, Outlook, Apple Calendrier, Thunderbird…</p>
+        <div class="btnrow">
+          <a class="btn btn--accent" href="/agenda.ics" download>{% icon "calendar" %} Tout l'agenda (.ics)</a>
+          <a class="btn" href="webcal://{{ site.url | replace('https://', '') }}agenda.ics">{% icon "rss" %} S'abonner (mises à jour)</a>
+        </div>
+        <p class="chart__source">L'abonnement « webcal » met ton agenda à jour automatiquement quand un horaire est annoncé ici.</p>
+      </div>
+      <div class="chart">
+        <p class="chart__title">Il reste avant le 23 novembre</p>
+        {% include "partials/countdown.njk" %}
+      </div>
+    </div>
+  </div>
+
+  <h2 id="dates">Toutes les dates</h2>
+  <div class="events">
+    {%- for ev in events %}{% include "partials/event-card.njk" %}{% endfor %}
+  </div>
+  <p class="srcs">Tu connais une action locale, une assemblée ou un départ collectif ? Propose-le via <a href="{{ site.repo }}/issues" rel="noopener">le dépôt du site</a> : l'agenda est un simple fichier de données, facile à compléter.</p>
+
+  <h2 id="mouvement" style="margin-top:3rem">Depuis février 2025 : un mouvement qui ne lâche pas</h2>
+  <p class="section__lead">Grèves générales, manifestations nationales, actions sectorielles et régionales : la mobilisation contre la politique du gouvernement Arizona est l'une des plus longues de l'histoire sociale récente du pays.</p>
+  {% dumbbell actions | manifPoints, { title: "Manifestations nationales à Bruxelles : combien étions-nous ?", subtitle: "Estimations de la police et des organisateurs. Les deux chiffres encadrent la réalité.", aLabel: "Selon la police", bLabel: "Selon les organisateurs", max: 150000, ticks: [0, 50000, 100000, 150000], source: "Sources : BX1, VRT NWS, RTBF, Euronews (voir le tableau ci-dessous).", id: "graph-participation" } %}
+
+  <div class="table-wrap">
+    <table class="actions-table">
+      <caption class="sr-only">Chronologie des actions contre la politique du gouvernement fédéral</caption>
+      <thead><tr><th scope="col">Date</th><th scope="col">Action</th><th scope="col">Participation</th><th scope="col">Sources</th></tr></thead>
+      <tbody>
+        {%- for a in actions | sortBy("date") %}
+        <tr{% if a.upcoming %} class="is-upcoming"{% endif %}>
+          <td>{{ a.date | dateNum }}</td>
+          <td><span class="badge">{% if a.type == "manif" %}Manifestation{% elif a.type == "greve" %}Grève{% elif a.type == "action" %}Actions{% else %}Repère{% endif %}</span> <strong>{{ a.title }}</strong><br><span class="srcs">{{ a.text }}</span></td>
+          <td>{% if a.police %}{{ a.police | num }} (police){% if a.orgs %}<br>{{ a.orgs | num }} (organisateurs){% endif %}{% else %}—{% endif %}</td>
+          <td>{% if a.sources.length %}{% for s in a.sources %}{% src s %}{% if not loop.last %}<br>{% endif %}{% endfor %}{% else %}—{% endif %}</td>
+        </tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% include "partials/share.njk" %}
+</div>

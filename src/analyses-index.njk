@@ -1,0 +1,25 @@
+---
+layout: layouts/page.njk
+permalink: /analyses/
+title: Analyses
+heading: Comprendre pour gagner
+kicker: Analyses · histoire, sciences sociales, actualité
+lead: "Sept analyses pour comprendre la contestation sociale face au pouvoir : d'où vient la force des mouvements, pourquoi certaines grèves gagnent, pourquoi le moment est décisif, et comment répondre aux arguments du gouvernement."
+description: "Analyses de fond sur la mobilisation sociale : pouvoir et contestation, conditions de succès des grèves, le moment politique, la concertation sociale, les pensions des femmes, la violence et la légitimité, la démocratie et la rue."
+---
+<div class="wrap">
+  <div class="essays">
+    {%- for e in collections.analyses %}
+    <a class="essay-card" href="{{ e.url }}">
+      <span class="essay-card__num">{{ e.data.order | pad2 }}</span>
+      <h2 class="essay-card__title">{{ e.data.title }}</h2>
+      <p>{{ e.data.description }}</p>
+      <span class="essay-card__meta">{{ e.content | readingTime }} min de lecture</span>
+    </a>
+    {%- endfor %}
+  </div>
+  <div class="callout callout--info" style="margin-top:2rem">
+    <p class="callout__title">Notre méthode</p>
+    <p>Chaque affirmation factuelle renvoie à une source publique (presse, institutions, études). Quand un chiffre est contesté, on le dit, et on présente les arguments du gouvernement avant d'y répondre. Retrouve toutes les références sur la page <a href="/sources/">Sources</a>.</p>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+---
+layout: layouts/page.njk
+title: Sources
+heading: Toutes nos sources
+kicker: Sources · transparence
+lead: "Chaque chiffre et chaque affirmation du site renvoie à une source publique. Les voici toutes, classées par thème. Le registre est aussi disponible en <a href=\"/api/sources.json\">JSON</a>."
+description: "Liste complète des sources (presse, institutions, études) utilisées sur le site de la mobilisation de novembre 2026."
+hideCta: true
+---
+{%- set topics = [
+  { key: "actualite", label: "Actualité de la mobilisation et du gouvernement" },
+  { key: "mobilisation", label: "Le mouvement depuis 2025" },
+  { key: "pouvoir-achat", label: "Salaires, indexation, prix" },
+  { key: "pensions", label: "Pensions" },
+  { key: "chomage", label: "Chômage" },
+  { key: "travail", label: "Travail et flexibilité" },
+  { key: "services-publics", label: "Services publics" },
+  { key: "alternatives", label: "Alternatives et patrimoine" },
+  { key: "budget", label: "Budget et dette" },
+  { key: "syndicats", label: "Syndicats et concertation" },
+  { key: "droits", label: "Droits et libertés" },
+  { key: "histoire", label: "Histoire des luttes" },
+  { key: "analyse", label: "Recherche et analyses" }
+] %}
+<div class="wrap narrow">
+  {%- for t in topics %}
+  <h2 id="{{ t.key }}">{{ t.label }}</h2>
+  <ol class="sourcelist">
+    {%- for id, s in sources %}{% if s.topic == t.key %}
+    <li id="src-{{ id }}"><span class="src-pub">{{ s.publisher }}</span>{% if s.date %} <span class="src-date">({{ s.date | dateShort }})</span>{% endif %} — <a href="{{ s.url }}" rel="noopener">{{ s.title }}</a></li>
+    {%- endif %}{% endfor %}
+  </ol>
+  {%- endfor %}
+</div>

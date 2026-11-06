@@ -1,0 +1,39 @@
+---
+layout: layouts/page.njk
+permalink: /api/
+title: API ouverte
+heading: Les données, en libre accès
+kicker: API JSON · iCalendar · Atom
+lead: "Toutes les données du site sont publiées dans des formats ouverts, mis à jour à chaque déploiement. Réutilise-les librement (CC BY-SA 4.0) : site de ta section syndicale, bot, affichage, application…"
+description: "API JSON statique de la mobilisation de novembre 2026 : agenda, chronologie des actions, frise historique, actualités, alternatives budgétaires, FAQ, sources. Plus agenda iCalendar et flux Atom."
+hideCta: true
+---
+<div class="wrap narrow prose">
+  <h2 id="points">Points d'accès</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Fichier</th><th scope="col">Contenu</th></tr></thead>
+      <tbody>
+        <tr><td><a href="/api/index.json"><code>api/index.json</code></a></td><td>Liste des points d'accès</td></tr>
+        <tr><td><a href="/api/events.json"><code>api/events.json</code></a></td><td>Rendez-vous à venir (agenda)</td></tr>
+        <tr><td><a href="/api/actions.json"><code>api/actions.json</code></a></td><td>Chronologie des actions depuis 2025, avec chiffres de participation</td></tr>
+        <tr><td><a href="/api/timeline.json"><code>api/timeline.json</code></a></td><td>Frise historique des luttes sociales</td></tr>
+        <tr><td><a href="/api/news.json"><code>api/news.json</code></a></td><td>Actualités datées</td></tr>
+        <tr><td><a href="/api/alternatives.json"><code>api/alternatives.json</code></a></td><td>Les 21,2 milliards d'alternatives et la répartition du patrimoine</td></tr>
+        <tr><td><a href="/api/faq.json"><code>api/faq.json</code></a></td><td>Questions fréquentes</td></tr>
+        <tr><td><a href="/api/sources.json"><code>api/sources.json</code></a></td><td>Registre de toutes les sources</td></tr>
+        <tr><td><a href="/agenda.ics"><code>agenda.ics</code></a></td><td>Agenda au format iCalendar (abonnement possible)</td></tr>
+        <tr><td><a href="/feed.xml"><code>feed.xml</code></a></td><td>Flux Atom des actualités</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="exemple">Exemple : afficher le prochain rendez-vous</h2>
+  <pre><code>fetch("{{ site.url }}api/events.json")
+  .then((r) =&gt; r.json())
+  .then(({ data }) =&gt; {
+    const next = data.find((e) =&gt; e.date &gt;= new Date().toISOString().slice(0, 10));
+    console.log(next.title, next.date, next.place);
+  });</code></pre>
+  <p>Chaque réponse contient <code>source</code>, <code>licence</code>, <code>generated</code> (date de génération) et <code>updated</code> (dernière mise à jour éditoriale), puis les données dans <code>data</code>.</p>
+</div>

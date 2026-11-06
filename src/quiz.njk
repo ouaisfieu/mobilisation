@@ -1,0 +1,34 @@
+---
+layout: layouts/page.njk
+title: Quiz
+heading: Connais-tu l'histoire de nos droits ?
+kicker: Quiz · 13 questions
+lead: "Suffrage universel, congés payés, sécu, égalité salariale… et les enjeux d'aujourd'hui. Teste-toi, puis défie tes collègues."
+description: "Quiz sur l'histoire sociale belge et les enjeux de la mobilisation de novembre 2026 : 13 questions avec corrections et sources."
+scripts: ["quiz.js"]
+---
+<div class="wrap narrow">
+  <form id="quiz" class="quiz" onsubmit="return false">
+    {%- for item in quiz %}
+    <fieldset class="q" data-q data-answer="{{ item.answer }}">
+      <legend class="sr-only">Question {{ loop.index }}</legend>
+      <p class="q__num">Question {{ loop.index }} / {{ quiz.length }}</p>
+      <p class="q__text">{{ item.q }}</p>
+      <div class="q__opts">
+        {%- set qi = loop.index %}
+        {%- for opt in item.options %}
+        <label class="q__opt"><input type="radio" name="q{{ qi }}" value="{{ loop.index0 }}"> <span>{{ opt }}</span></label>
+        {%- endfor %}
+      </div>
+      <p class="q__explain" hidden>{{ item.explain }} {% src item.source %}</p>
+    </fieldset>
+    {%- endfor %}
+  </form>
+  <div class="quiz__score" role="status" aria-live="polite">
+    <span>Ton score : <strong data-score>0 / {{ quiz.length }}</strong></span>
+    <span data-score-msg></span>
+    <button type="button" class="btn btn--light btn--small" data-score-share data-url="{{ page.url | absUrl(site.url) }}" hidden>{% icon "share" %} Défier mes collègues</button>
+  </div>
+  <noscript><p>Le quiz nécessite JavaScript. Les réponses : 1893 · 6 jours · 1921 · arrêté-loi du 28 décembre 1944 · l'égalité salariale · la Loi unique · 54,9 % · 21,2 milliards · 156 jours · 5,26 % · 90 % · l'interdiction de manifester · la CGSLB.</p></noscript>
+  <p style="margin-top:2rem"><a class="btn" href="/histoire/">Revoir la frise historique {% icon "arrow" %}</a></p>
+</div>

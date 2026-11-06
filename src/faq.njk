@@ -1,0 +1,31 @@
+---
+layout: layouts/page.njk
+title: Questions fréquentes
+heading: Les questions qu'on se pose
+kicker: FAQ
+lead: "Pas syndiqué·e ? Peur de perdre son salaire ? Doute sur l'utilité d'une manif ? Voici des réponses franches, sourcées, sans langue de bois."
+description: "Questions fréquentes sur la manifestation nationale du 23 novembre 2026 : qui peut venir, droit de grève, salaire, utilité, crise politique, violence, comment venir, indexation, malus pension."
+---
+<div class="wrap narrow">
+  <div class="accordion">
+    {%- for item in faq %}
+    <details class="acc" id="q{{ loop.index }}"{% if loop.first %} open{% endif %}>
+      <summary class="acc__q">{{ item.q }}{% icon "chevron", "acc__chev" %}</summary>
+      <div class="acc__a">{{ item.a | safe }}{% if item.sources.length %}<p class="srcs">{% srcs item.sources | join(",") %}</p>{% endif %}</div>
+    </details>
+    {%- endfor %}
+  </div>
+  <p>Une question sans réponse ? <a href="{{ site.repo }}/issues" rel="noopener">Pose-la sur le dépôt du site</a>.</p>
+  {% include "partials/share.njk" %}
+</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for item in faq %}
+    { "@type": "Question", "name": {{ item.q | json | safe }}, "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | stripTags | json | safe }} } }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>

@@ -1,0 +1,307 @@
+---
+layout: layouts/page.njk
+title: Les enjeux
+heading: Ce qui se joue, concrètement
+kicker: Les enjeux · chiffres et sources
+lead: "Salaire, pension, chômage, école, santé, libertés : voici ce que les décisions déjà prises et celles qui sont sur la table changent pour toi. Tout est sourcé, et deux simulateurs te permettent de calculer ton cas."
+description: "Indexation rabotée, malus pension, chômage limité dans le temps, coupes dans l'enseignement et la santé : ce que la politique du gouvernement change concrètement, avec simulateurs et sources."
+ogImage: og-enjeux.png
+scripts: ["calc.js"]
+updatedNote: "État des lieux au 6 novembre 2026 : le budget 2027 n'est pas adopté et plusieurs mesures restent en discussion."
+---
+<div class="wrap">
+  <nav class="filters" aria-label="Aller à une section">
+    <div class="filters__group">
+      <span class="filters__label">Aller à</span>
+      <a class="chip" href="#salaires">Salaire & index</a>
+      <a class="chip" href="#pensions">Pension</a>
+      <a class="chip" href="#chomage">Emploi & chômage</a>
+      <a class="chip" href="#ecole">École & jeunes</a>
+      <a class="chip" href="#sante">Santé</a>
+      <a class="chip" href="#services-publics">Services publics</a>
+      <a class="chip" href="#libertes">Libertés</a>
+      <a class="chip" href="#revendications">Ce qu'on demande</a>
+    </div>
+  </nav>
+
+  <!-- ============ SALAIRES ============ -->
+  <section class="issue" id="salaires" aria-labelledby="t-salaires">
+    <div class="issue__head"><span class="issue__icon">{% icon "wallet" %}</span><h2 class="issue__title" id="t-salaires">Ton salaire : l'index dans le viseur</h2></div>
+    <div class="issue__grid">
+      <div class="prose">
+        <p class="lede">L'indexation automatique, c'est ce qui empêche la hausse des prix de manger ton salaire, ta pension ou ton allocation. Elle est rabotée, et d'autres coups sont sur la table — au moment précis où les prix flambent.</p>
+        <h3>Déjà décidé : l'« index en centimes » (2026 et 2028)</h3>
+        <ul class="facts">
+          <li><strong>Salaires au-dessus de 4 000 € brut par mois :</strong> en 2026 et en 2028, la partie du salaire au-dessus de 4 000 € ne reçoit que ce qui dépasse 2 % d'indexation. Exemple : à 5 000 € brut avec un index de 3 %, tu reçois 130 € au lieu de 150 €. {% src "lexgo-centenindex" %}</li>
+          <li><strong>Allocations et pensions au-dessus de 2 000 € brut :</strong> même logique, avec un seuil à 2 000 €. {% src "rtbf-accord-2025" %}</li>
+          <li><strong>Une perte définitive :</strong> l'index non versé ne se rattrape jamais. Il pèse aussi sur le pécule de vacances, la prime de fin d'année et certaines pensions complémentaires. {% src "lexgo-centenindex" %}</li>
+          <li><strong>Où va l'argent ?</strong> La moitié de l'index non versé reste à l'employeur, l'autre moitié part à l'État sous forme de « cotisation de modération salariale ». {% src "mondaq-centenindex" %}</li>
+          <li><strong>Pas de hausse réelle non plus :</strong> la norme salariale 2025-2026 est fixée à 0 % au-delà de l'index. {% src "lexgo-norme" %}</li>
+        </ul>
+        <h3>Sur la table : encore plus loin</h3>
+        <ul class="facts">
+          <li><strong>Gel complet pendant un an</strong> de l'indexation des allocations sociales, des allocations de chômage, des pensions, des salaires des fonctionnaires et du barème fiscal : c'est le « filet de sécurité » proposé par Bart De Wever le 15 octobre 2026. Non adopté à ce jour. {% src "rtbf-gel-index" %}</li>
+          <li><strong>« Adaptations de l'indexation »</strong> et économies dans les soins de santé figurent parmi les pistes pour trouver 3 à 4 milliards en 2027, selon des médias flamands. {% src "21news-tva" %}</li>
+          <li><strong>TVA :</strong> le projet de passer le taux normal de 21 à 22 % et de fusionner les taux de 6 et 12 % en un taux de 9 % a été retiré « provisoirement » le 15 octobre. Il peut revenir. {% src "21news-tva" %}</li>
+        </ul>
+        {% callout "Pour être juste", "info" %}<p>Les salaires des parlementaires et des ministres ne sont pas indexés pendant toute la législature, et les salaires sous 4 000 € brut gardent l'indexation complète en 2026 et 2028. {% src "rtbf-accord-2025" %}</p>{% endcallout %}
+      </div>
+      <div>
+        {% sparkTile [{x: "juillet", y: 3.56}, {x: "août", y: 3.97}, {x: "septembre", y: 4.69}, {x: "octobre", y: 5.26}], { label: "Inflation en Belgique, 2026", note: "Plus haut niveau depuis avril 2023. Énergie : +33 % sur un an, électricité : +23,7 %.", source: "Sources : Statbel via Business AM et Trading Economics.", id: "graph-inflation" } %}
+        <div class="who" style="margin-top:1rem">
+          <p class="who__title">Qui est touché ?</p>
+          <p>Selon la FGTB, le saut d'indexation partiel touche <strong>un travailleur sur deux et un pensionné sur trois</strong>. Un gel complet d'un an toucherait absolument tout le monde : salarié·es du public, allocataires, pensionné·es — et le barème fiscal non indexé ferait payer plus d'impôts à salaire égal. {% src "fgtb-2026" %} {% src "rtbf-gel-index" %}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sim" id="simulateur-index">
+      <h3 class="sim__title">Simulateur : combien te coûte l'« index en centimes » ?</h3>
+      <p class="sim__intro">Calcul indicatif en brut, à partir des règles publiées. Tous les calculs se font dans ton navigateur, rien n'est enregistré.</p>
+      <form class="sim__grid" novalidate>
+        <div>
+          <div class="field">
+            <label for="salaire">Salaire (ou allocation) brut mensuel de base</label>
+            <input id="salaire" name="salaire" type="text" inputmode="decimal" autocomplete="off" value="4500">
+            <small>Hors primes, chèques-repas, heures sup.</small>
+          </div>
+          <div class="field">
+            <fieldset><legend>Tu es</legend>
+              <div class="radios">
+                <label><input type="radio" name="statut" value="salarie" checked> salarié·e (seuil 4 000 €)</label>
+                <label><input type="radio" name="statut" value="allocataire"> pensionné·e ou allocataire (seuil 2 000 €)</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="field">
+            <label for="i2026">Indexation appliquée en 2026 (%)</label>
+            <input id="i2026" name="i2026" type="text" inputmode="decimal" autocomplete="off" value="2,5">
+            <small>Dépend de ton secteur (commission paritaire). Vérifie ta fiche de paie.</small>
+          </div>
+          <div class="field">
+            <label for="i2027">Indexation 2027 (%) — hypothèse</label>
+            <input id="i2027" name="i2027" type="text" inputmode="decimal" autocomplete="off" value="3">
+          </div>
+          <div class="field">
+            <label for="i2028">Indexation 2028 (%) — hypothèse</label>
+            <input id="i2028" name="i2028" type="text" inputmode="decimal" autocomplete="off" value="2">
+          </div>
+          <div class="field">
+            <label for="annees">Sur combien d'années calculer la perte ?</label>
+            <input id="annees" name="annees" type="number" inputmode="numeric" min="1" max="45" step="1" value="20">
+          </div>
+          <div class="field">
+            <label><input type="checkbox" name="gel"> Ajouter le scénario du gel complet de l'indexation en 2027 (proposé le 15 octobre 2026, non adopté)</label>
+          </div>
+        </div>
+        <div class="sim__out" aria-live="polite">
+          <p class="kicker">Perte cumulée sur <span data-out="years">20</span> ans (brut)</p>
+          <p class="sim__big" data-out="big">—</p>
+          <ul class="sim__rows">
+            <li><span>Perte mensuelle en 2026</span><span data-out="m26">—</span></li>
+            <li><span>Perte mensuelle après 2028</span><span data-out="m28">—</span></li>
+            <li><span>Perte annuelle après 2028</span><span data-out="y28">—</span></li>
+            <li><span>Seuil appliqué</span><span data-out="thr">—</span></li>
+          </ul>
+          <p class="sim__msg" data-out="msg"></p>
+          <p class="sim__note">Hypothèses : seuil fixe ; salarié·e : 13,92 mois par an (12 mois + prime de fin d'année + double pécule) ; allocataire : 12 mois ; indexation de 2 % par an après 2028. Ce simulateur ne remplace pas ta fiche de paie ni l'avis de ton syndicat.</p>
+        </div>
+      </form>
+      <noscript><p>Active JavaScript pour utiliser le simulateur. Règle de calcul : au-dessus du seuil, seule la part de l'index dépassant 2 % est appliquée.</p></noscript>
+    </div>
+  </section>
+
+  <!-- ============ PENSIONS ============ -->
+  <section class="issue" id="pensions" aria-labelledby="t-pensions">
+    <div class="issue__head"><span class="issue__icon">{% icon "hourglass" %}</span><h2 class="issue__title" id="t-pensions">Ta pension : travailler plus, toucher moins</h2></div>
+    <div class="issue__grid">
+      <div class="prose">
+        <p class="lede">La réforme des pensions a été adoptée par la Chambre fin mai 2026. Elle s'applique aux pensions qui prennent cours <strong>à partir du 1er janvier 2027</strong>. {% src "lavenir-pensions" %}</p>
+        <h3>Ce qui change</h3>
+        <ul class="facts">
+          <li><strong>Âge légal :</strong> 66 ans aujourd'hui, 67 ans en 2030. {% src "lavenir-pensions" %}</li>
+          <li><strong>Le malus :</strong> partir avant l'âge légal sans 35 années d'au moins 156 jours de travail effectif <em>et</em> 7 020 jours au total réduit la pension de 2 %, 4 % ou 5 % par année d'anticipation selon l'année de naissance (5 % pour les plus jeunes). Selon la CSC, jusqu'à 25 % de pension en moins. {% src "lavenir-pensions-accord" %} {% src "csc-temps-partiel" %}</li>
+          <li><strong>La règle des 156 jours :</strong> dès 2027, une année ne compte que si elle totalise au moins 156 jours de travail (ou assimilés), contre 104 jusqu'ici. {% src "lavenir-pensions-accord" %}</li>
+          <li><strong>Périodes assimilées plafonnées :</strong> chômage, prépension et fins de carrière ne pourront plus peser que 20 % de la carrière (pour les personnes nées à partir de 1968). Maladie, invalidité et congés de soins ne sont pas visés. {% src "lavenir-pensions" %}</li>
+          <li><strong>Pension anticipée :</strong> possible dès 60 ans avec 42 années de carrière, sous des conditions strictes de jours prestés. {% src "dh-pensions" %}</li>
+          <li><strong>Fonction publique :</strong> fin des tantièmes préférentiels pour les années prestées à partir de 2027 (1/60e), salaire de référence allongé progressivement jusqu'à 45 ans de carrière d'ici 2062, fin de la péréquation des pensions des statutaires, coefficient de 1,05 supprimé ou réduit à 1,025 (enseignant·es, policier·es, pompier·es…). {% src "lavenir-pensions" %}</li>
+          <li><strong>Le bonus :</strong> +2 %, +4 % ou +5 % par année travaillée au-delà de l'âge légal, sous les mêmes conditions de carrière. {% src "lavenir-pensions" %}</li>
+        </ul>
+        <h3>Qui paie le plus ?</h3>
+        <p>Les <strong>temps partiels</strong>, occupés jusqu'à 90 % par des femmes dans les secteurs les plus exposés (enseignement, soins, titres-services). À mi-temps, un seul jour d'absence peut faire perdre une année entière ; sous 45 % d'un temps plein, l'année ne compte jamais. La CSC estime à <strong>382 000</strong> le nombre de travailleurs et travailleuses à mi-temps ou moins menacés, et a saisi la Cour constitutionnelle. {% src "csc-temps-partiel" %}</p>
+        <p>Les chiffres du gouvernement lui-même : sur les départs anticipés récents, <strong>36,7 % des femmes</strong> ne rempliraient pas les deux conditions, contre 18,9 % des hommes. {% src "rtbf-bonus-malus" %}</p>
+        {% callout "La réponse du gouvernement", "info" %}<p>Le ministre des Pensions, Jan Jambon, affirme que la réforme n'augmente pas significativement la pauvreté ni l'écart de pension entre hommes et femmes, qu'un amendement permet de compenser les années « maigres » entre 150 et 162 jours, et que 97 % des personnes à mi-temps prestent entre 150 et 162 jours par an. {% src "lavenir-jambon" %} À toi de juger : un seul jour d'absence de plus suffit toujours à faire basculer une année.</p>{% endcallout %}
+      </div>
+      <div>
+        <div class="stats" style="grid-template-columns:1fr">
+          <div class="stat"><span class="stat__label">Espérance de vie en bonne santé (à la naissance)</span><span class="stat__value">≈ 63 ans</span><span class="stat__note">63,8 ans pour les femmes, 63,2 pour les hommes (Eurostat, 2018). L'âge légal passera à 67 ans. {% src "parismatch-hly" %}</span></div>
+          <div class="stat"><span class="stat__label">Écart d'espérance de vie</span><span class="stat__value">10,6 ans</span><span class="stat__note">Entre les 10 % d'hommes les plus défavorisés et les 10 % les plus favorisés. À 67 ans, environ un tiers des hommes les plus pauvres sont déjà décédés. {% src "dh-inegalites-mort" %}</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sim" id="simulateur-malus">
+      <h3 class="sim__title">Simulateur : quel malus sur ta pension ?</h3>
+      <p class="sim__intro">Estimation indicative selon les règles annoncées. Les modalités exactes dépendent des textes d'application : vérifie toujours ta carrière sur <a href="https://www.mypension.be/" rel="noopener">mypension.be</a> et auprès de ton syndicat.</p>
+      <form class="sim__grid" novalidate>
+        <div>
+          <div class="field">
+            <label for="naissance">Ton année de naissance</label>
+            <input id="naissance" name="naissance" type="number" inputmode="numeric" min="1955" max="2008" step="1" value="1975">
+          </div>
+          <div class="field">
+            <label for="age">À quel âge voudrais-tu partir ?</label>
+            <select id="age" name="age">
+              <option value="60">60 ans</option><option value="61">61 ans</option><option value="62">62 ans</option>
+              <option value="63" selected>63 ans</option><option value="64">64 ans</option><option value="65">65 ans</option>
+              <option value="66">66 ans</option><option value="67">67 ans</option>
+            </select>
+            <small>Partir avant l'âge légal suppose de remplir les conditions de pension anticipée.</small>
+          </div>
+          <div class="field">
+            <fieldset><legend>Auras-tu 35 années d'au moins 156 jours de travail et 7 020 jours au total ?</legend>
+              <div class="radios">
+                <label><input type="radio" name="conditions" value="oui"> oui</label>
+                <label><input type="radio" name="conditions" value="non" checked> non</label>
+                <label><input type="radio" name="conditions" value="nsp"> je ne sais pas</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="field">
+            <label for="pension">Ta pension brute mensuelle estimée (€)</label>
+            <input id="pension" name="pension" type="text" inputmode="decimal" autocomplete="off" value="1800">
+          </div>
+        </div>
+        <div class="sim__out" aria-live="polite">
+          <p class="kicker">Malus estimé</p>
+          <p class="sim__big" data-out="big">—</p>
+          <ul class="sim__rows">
+            <li><span>Âge légal pour toi</span><span data-out="legal">—</span></li>
+            <li><span>Taux pour ta génération</span><span data-out="rate">—</span></li>
+            <li><span>Par mois</span><span data-out="month">—</span></li>
+            <li><span>Par an</span><span data-out="year">—</span></li>
+            <li><span>Sur 20 ans de pension</span><span data-out="total">—</span></li>
+          </ul>
+          <p class="sim__msg" data-out="note"></p>
+          <p class="sim__note">Taux par année d'anticipation : 2 % (né·e 1961-1965), 4 % (1966-1974), 5 % (à partir de 1975), selon les règles publiées en mars 2026. La simulation plafonne la réduction à 25 %, le maximum évoqué par les syndicats. Montants bruts, sans indexation.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ CHÔMAGE & EMPLOI ============ -->
+  <section class="issue" id="chomage" aria-labelledby="t-chomage">
+    <div class="issue__head"><span class="issue__icon">{% icon "users" %}</span><h2 class="issue__title" id="t-chomage">Emploi et chômage : le filet troué</h2></div>
+    <div class="issue__grid">
+      <div class="prose">
+        <h3>Des allocations limitées dans le temps</h3>
+        <ul class="facts">
+          <li>Depuis 2026, les allocations de chômage sont limitées à <strong>24 mois maximum</strong> (12 mois de base, plus jusqu'à 12 mois selon le passé professionnel), les allocations d'insertion à un an. {% src "rtbf-chomage-vagues" %}</li>
+          <li>Les exclusions tombent par vagues : 1er janvier 2026 (20 ans de chômage et plus), 1er mars, 1er avril, 1er juillet 2026, puis jusqu'au 1er juillet 2027. {% src "rtbf-chomage-vagues" %}</li>
+          <li><strong>168 063 personnes</strong> étaient en fin de droits selon l'ONEM en février 2026 ; la FGTB parle de 184 000 demandeurs d'emploi exclus à terme. {% src "lalibre-exclus" %} {% src "fgtb-2026" %}</li>
+          <li>44,5 % sont peu diplômées ; près de 13 750 ont moins de 25 ans. {% src "lalibre-exclus" %}</li>
+          <li>Une partie se tourne vers les CPAS, financés par les communes : la facture est déplacée, pas supprimée. {% src "rtbf-cpas" %}</li>
+          <li>Exceptions : notamment les 55 ans et plus avec 30 ans de carrière, les travailleurs et travailleuses des arts, les personnes en prépension (RCC). {% src "rtbf-chomage-vagues" %}</li>
+        </ul>
+        <h3>Plus de flexibilité, moins de protection</h3>
+        <ul class="facts">
+          <li><strong>Travail de nuit :</strong> suppression programmée de l'interdiction générale ; le travail entre minuit et 5 h ne resterait du « travail de nuit » que dans l'e-commerce et la logistique, avec des primes limitées. {% src "jubel-ete" %} {% src "forum-etat-arizona" %}</li>
+          <li><strong>Heures supplémentaires « volontaires » :</strong> jusqu'à 360 heures par an (450 dans l'horeca). {% src "jubel-ete" %}</li>
+          <li><strong>Flexi-jobs</strong> étendus à tous les secteurs, avec un plafond relevé à 18 000 € par an ; <strong>travail étudiant</strong> porté à 650 heures. {% src "forum-etat-arizona" %}</li>
+          <li><strong>Préavis de licenciement</strong> plafonné à 52 semaines pour les contrats conclus depuis le 1er janvier 2026. {% src "jubel-ete" %}</li>
+          <li><strong>Annualisation du temps de travail :</strong> calculer la durée du travail sur l'année plutôt que sur la semaine. C'est une « ligne rouge » de la FGTB. {% src "vrt-9oct-annonce" %} {% src "moustique-griefs" %}</li>
+        </ul>
+      </div>
+      <div>
+        {% segBar [{label: "Wallonie", value: 46.7, tone: "c1"}, {label: "Flandre", value: 31.2, tone: "c2"}, {label: "Bruxelles", value: 22.1, tone: "c3"}], { title: "Où vivent les personnes exclues du chômage ?", subtitle: "Répartition des fins de droits par région, février 2026", source: "Source : ONEM, via La Libre (19 février 2026).", id: "graph-exclus-regions" } %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ÉCOLE ============ -->
+  <section class="issue" id="ecole" aria-labelledby="t-ecole">
+    <div class="issue__head"><span class="issue__icon">{% icon "school" %}</span><h2 class="issue__title" id="t-ecole">L'école et les jeunes : l'austérité aussi en Fédération Wallonie-Bruxelles</h2></div>
+    <div class="issue__grid">
+      <div class="prose">
+        <p>L'austérité ne vient pas que du fédéral. En Fédération Wallonie-Bruxelles, les mesures du gouvernement en charge de l'enseignement mobilisent élèves, étudiant·es, parents et enseignant·es depuis des mois.</p>
+        <ul class="facts">
+          <li><strong>Pour les familles et les jeunes :</strong> hausse du minerval, fin de l'abonnement TEC à 12 € pour les étudiant·es, inscriptions payantes dans les académies, stages ADEPS plus chers, suppression de repas pour les élèves les plus précaires. {% src "csc-eleves" %} {% src "bx1-25jan" %}</li>
+          <li><strong>Pour les enseignant·es :</strong> charge de travail en hausse, réformes vécues comme une dégradation des conditions d'enseignement, concertation jugée « de façade ». {% src "csc-ens-17nov" %} {% src "bx1-25jan" %}</li>
+          <li><strong>La rue répond :</strong> 6 500 à 8 000 personnes le 25 janvier 2026, des milliers d'élèves et d'enseignant·es en juin, des actions d'élèves en octobre. {% src "bx1-25jan" %} {% src "bx1-enseignants-juin" %}</li>
+          <li><strong>Prochain rendez-vous :</strong> le 17 novembre, Journée internationale des étudiant·es. La FEF appelle à « une grande grève dans l'enseignement ». {% src "dh-17nov" %}</li>
+        </ul>
+      </div>
+      <div class="who">
+        <p class="who__title">Ce que demandent les jeunes et les enseignant·es</p>
+        <p>Des conditions d'études décentes, un minerval accessible, le refinancement de l'enseignement, des moyens pour garantir un enseignement de qualité à chaque élève, et une réponse politique — pas policière — à leur mobilisation. {% src "bx1-17nov" %} {% src "csc-eleves" %}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SANTÉ ============ -->
+  <section class="issue" id="sante" aria-labelledby="t-sante">
+    <div class="issue__head"><span class="issue__icon">{% icon "hospital" %}</span><h2 class="issue__title" id="t-sante">Ta santé : les malades dans le collimateur</h2></div>
+    <div class="prose">
+      <ul class="facts">
+        <li>Une dizaine de mesures visent à réduire le nombre de malades de longue durée, en ciblant employeurs, médecins et patient·es : <strong>1,9 milliard d'euros</strong> attendus en 2029. {% src "rtbf-accord-2025" %}</li>
+        <li>Pour 2027, des économies supplémentaires dans les soins de santé figurent parmi les pistes budgétaires discutées. {% src "21news-tva" %}</li>
+        <li>La FGTB s'inquiète d'une hausse du ticket modérateur, c'est-à-dire de la part payée de ta poche chez le médecin. {% src "moustique-griefs" %}</li>
+        <li>Une avancée arrachée : les périodes de maladie compteront comme périodes assimilées pour éviter le malus pension. {% src "rtbf-accord-2025" %} {% src "rtbf-bonus-malus" %}</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES PUBLICS ============ -->
+  <section class="issue" id="services-publics" aria-labelledby="t-sp">
+    <div class="issue__head"><span class="issue__icon">{% icon "flag" %}</span><h2 class="issue__title" id="t-sp">Services publics et communes : faire mieux avec moins ?</h2></div>
+    <div class="prose">
+      <ul class="facts">
+        <li>En Wallonie, le budget 2026 met « un frein clair aux recrutements » dans la fonction publique. {% src "parismatch-budget-wallon" %}</li>
+        <li>Des milliers de manifestant·es à Namur en juin 2026 contre la politique budgétaire du gouvernement wallon ; nouvelle manifestation des pouvoirs locaux et provinciaux le <strong>18 novembre</strong>. {% src "lalibre-namur-juin" %} {% src "lalibre-23nov" %}</li>
+        <li>Les communes et leurs CPAS absorbent une partie du coût des exclusions du chômage. {% src "rtbf-cpas" %}</li>
+        <li>Pour les agent·es statutaires, la fin de la péréquation et le nouveau calcul des pensions changent la donne. {% src "lavenir-pensions" %}</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ LIBERTÉS ============ -->
+  <section class="issue" id="libertes" aria-labelledby="t-libertes">
+    <div class="issue__head"><span class="issue__icon">{% icon "shield" %}</span><h2 class="issue__title" id="t-libertes">Nos libertés : le droit de contester sous pression</h2></div>
+    <div class="prose">
+      <ul class="facts">
+        <li><strong>Concertation contournée :</strong> selon la FGTB, le gouvernement a placé la concertation sociale « devant le fait accompli », l'a affaiblie ou ignorée. {% src "moustique-griefs" %}</li>
+        <li><strong>Loi « casseur-payeur » et interdiction de manifester :</strong> le gouvernement s'est accordé en mars 2026 sur des mesures visant les casseurs ; le ministre de l'Intérieur réclame leur adoption rapide. {% src "bx1-casseur-payeur" %}</li>
+        <li><strong>Dissolution d'organisations par l'exécutif :</strong> un avant-projet permettrait au gouvernement d'interdire des organisations jugées menaçantes, sans juge. La Ligue des droits humains dénonce un « pouvoir exorbitant ». {% src "bx1-dissolution" %}</li>
+        <li><strong>Mettre les syndicats à l'amende ?</strong> Après le 9 octobre, le président du MR a demandé que les syndicats paient les dégâts commis en marge de la manifestation. {% src "rtbf-9oct" %}</li>
+      </ul>
+      {% callout "Ça s'est déjà gagné", "ok" %}<p>En décembre 2023, après des mois de mobilisation des syndicats et des associations, le gouvernement fédéral avait renoncé à l'interdiction judiciaire de manifester. {% src "bx1-interdiction-2023" %}</p>{% endcallout %}
+    </div>
+  </section>
+
+  <!-- ============ REVENDICATIONS ============ -->
+  <section class="issue" id="revendications" aria-labelledby="t-rev">
+    <div class="issue__head"><span class="issue__icon">{% icon "megaphone" %}</span><h2 class="issue__title" id="t-rev">Ce qu'on demande</h2></div>
+    <div class="issue__grid">
+      <div class="prose">
+        <p>Synthèse des revendications portées par le front commun syndical pour le 23 novembre et lors des mobilisations précédentes :</p>
+        <ul class="facts">
+          <li>Que l'ajustement des finances publiques ne se fasse pas « une fois de plus sur le dos des travailleurs, des allocataires sociaux et des services publics ». {% src "rtbf-23nov" %}</li>
+          <li>Des emplois de qualité, des salaires décents, des services publics robustes et un enseignement émancipateur. {% src "csc-23nov" %}</li>
+          <li>Protéger l'indexation automatique des salaires et des allocations, sans nouvelle intervention unilatérale. {% src "csc-9oct" %} {% src "moustique-griefs" %}</li>
+          <li>Pas de hausse de la TVA, pas d'annualisation du temps de travail. {% src "vrt-9oct-annonce" %}</li>
+          <li>Faire contribuer équitablement les grandes fortunes, les revenus du capital et les profits exceptionnels ; lutter contre la fraude et les niches fiscales. {% src "csc-9oct" %} {% src "moustique-griefs" %}</li>
+          <li>Un budget construit avec les interlocuteurs sociaux, qui intègre les 21,2 milliards d'alternatives. {% src "csc-23nov" %}</li>
+          <li>Supprimer le malus pension, qui frappe d'abord les femmes et les temps partiels. {% src "rtbf-12mars" %} {% src "csc-temps-partiel" %}</li>
+        </ul>
+      </div>
+      <div>
+        <div class="card card--accent">
+          <p class="card__step">Le 23, on y va.</p>
+          <p>Tu as vu ce qui se joue. La seule façon de peser sur ces choix, c'est d'être nombreux et nombreuses, ensemble.</p>
+          <p><a class="btn btn--light" href="/agir/">Comment rejoindre la mobilisation {% icon "arrow" %}</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% include "partials/share.njk" %}
+</div>

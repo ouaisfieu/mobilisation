@@ -1,0 +1,68 @@
+---
+layout: layouts/page.njk
+title: Mode manif
+heading: Mode manif
+kicker: Le jour J · disponible hors ligne
+lead: "Tout ce qu'il faut le jour de la manifestation, même quand le réseau sature. Ouvre cette page une fois avec une connexion : elle reste ensuite disponible hors ligne. Ajoute-la à ton écran d'accueil."
+description: "La check-list du jour de manifestation : quoi emporter, comment se retrouver, numéros d'urgence, gaz lacrymogène, droits en cas d'arrestation. Fonctionne hors ligne."
+hideCta: true
+---
+<div class="wrap narrow">
+  <p><span class="offline-badge" data-offline-status>{% icon "wifi-off" %} Mode hors ligne</span></p>
+
+  <h2 id="urgences">Numéros utiles</h2>
+  <div class="emergency">
+    <div class="emergency__item"><a class="emergency__num" href="tel:112">112</a><p>Urgences : ambulance, pompiers. Gratuit, depuis n'importe quel téléphone.</p></div>
+    <div class="emergency__item"><a class="emergency__num" href="tel:101">101</a><p>Police (urgence policière).</p></div>
+    <div class="emergency__item"><a class="emergency__num" href="tel:070245245">070 245 245</a><p>Centre Antipoisons.</p></div>
+  </div>
+  <p class="srcs">Écris aussi sur un papier (ou au marqueur sur ton bras) le numéro d'un·e proche et celui de ta délégation : ton téléphone peut tomber en panne.</p>
+
+  <h2 id="sac">Dans ton sac</h2>
+  <ul class="checklist" data-checklist="sac">
+    <li><label><input type="checkbox" value="id"><span>Carte d'identité</span></label></li>
+    <li><label><input type="checkbox" value="tel"><span>Téléphone chargé + batterie externe</span></label></li>
+    <li><label><input type="checkbox" value="papier"><span>Numéros importants écrits sur papier</span></label></li>
+    <li><label><input type="checkbox" value="eau"><span>Eau et quelque chose à grignoter</span></label></li>
+    <li><label><input type="checkbox" value="meteo"><span>Vêtements chauds et imperméable (fin novembre à Bruxelles…)</span></label></li>
+    <li><label><input type="checkbox" value="chaussures"><span>Chaussures confortables</span></label></li>
+    <li><label><input type="checkbox" value="medic"><span>Tes médicaments personnels</span></label></li>
+    <li><label><input type="checkbox" value="cash"><span>Un peu d'argent liquide et ton titre de transport</span></label></li>
+    <li><label><input type="checkbox" value="pancarte"><span>Ta pancarte, ton badge, ta chasuble</span></label></li>
+  </ul>
+  <button type="button" class="btn btn--small" data-checklist-reset="sac">Réinitialiser la liste</button>
+
+  <h2 id="sur-place">Sur place</h2>
+  <ul class="checklist" data-checklist="sur-place">
+    <li><label><input type="checkbox" value="rdv"><span>Je connais le point de rendez-vous de mon groupe</span></label></li>
+    <li><label><input type="checkbox" value="binome"><span>J'ai un binôme et on ne se perd pas de vue</span></label></li>
+    <li><label><input type="checkbox" value="repli"><span>On a convenu d'un lieu de repli si on se perd</span></label></li>
+    <li><label><input type="checkbox" value="so"><span>J'ai repéré le service d'ordre syndical</span></label></li>
+    <li><label><input type="checkbox" value="calme"><span>Je reste loin des tensions : je n'ai pas à « aller voir »</span></label></li>
+  </ul>
+
+  <h2 id="gaz">En cas de gaz lacrymogène</h2>
+  <ul class="facts">
+    <li>Éloigne-toi calmement, dos au vent, vers un endroit aéré. Aide les personnes autour de toi.</li>
+    <li>Ne te frotte pas les yeux. Retire tes lentilles si tu en portes.</li>
+    <li>Rince abondamment à l'eau claire ou au sérum physiologique.</li>
+    <li>Si les symptômes persistent (difficultés respiratoires, douleur), demande de l'aide médicale : 112.</li>
+  </ul>
+
+  <h2 id="arrestation">Si tu es arrêté·e</h2>
+  <ul class="facts">
+    <li>Reste calme, ne résiste pas physiquement.</li>
+    <li>Demande le motif et s'il s'agit d'une arrestation <strong>administrative</strong> (12 h maximum) ou <strong>judiciaire</strong> (48 h maximum). {% src "droitsquotidiens-arrest" %}</li>
+    <li>Demande à faire prévenir une personne de confiance ; tu as droit à de l'eau, à des sanitaires et à une assistance médicale. {% src "droitsquotidiens-arrest" %}</li>
+    <li>En arrestation judiciaire, demande un avocat avant toute audition. Lis tout document avant de le signer.</li>
+    <li>Ensuite, préviens ton syndicat. Plus de détails sur la page <a href="/droits/">Vos droits</a>.</li>
+  </ul>
+
+  <h2 id="apres">Après</h2>
+  <ul class="facts">
+    <li>Préviens tes proches que tu es bien rentré·e.</li>
+    <li>Partage des photos du cortège, des pancartes, des visages heureux : c'est ça, l'image du mouvement.</li>
+    <li>Si tu as été témoin de violences, d'où qu'elles viennent, note tout et transmets à ton syndicat.</li>
+    <li>Et prépare la suite : <a href="/agir/">rejoins la mobilisation</a> dans la durée.</li>
+  </ul>
+</div>

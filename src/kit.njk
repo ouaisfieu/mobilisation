@@ -1,0 +1,57 @@
+---
+layout: layouts/page.njk
+title: Kit visuel
+heading: Le kit pour mobiliser
+kicker: Affiches · tracts · visuels · pancartes
+lead: "Affiches à imprimer, tract recto-verso, visuels pour les réseaux sociaux, pancartes prêtes à brandir. Tout est libre de droits (CC BY-SA) : imprime, partage, adapte."
+description: "Kit de mobilisation pour le 23 novembre 2026 : affiches A3 et A4, tract A5, visuels pour Instagram, Facebook, WhatsApp, bannière, pancartes et slogans. Gratuit et libre."
+ogImage: og-agir.png
+---
+<div class="wrap">
+  <h2 id="imprimer">À imprimer</h2>
+  <div class="kit">
+    {%- for k in kit.print %}
+    <article class="kit__item">
+      <div class="kit__img"><img src="/assets/kit/{{ k.preview }}" alt="Aperçu : {{ k.title }}" loading="lazy" width="{{ k.w }}" height="{{ k.h }}"></div>
+      <div class="kit__body">
+        <h3>{{ k.title }}</h3>
+        <p>{{ k.desc }}</p>
+        <div class="btnrow" style="margin-top:0.25rem">{% for f in k.files %}<a class="btn btn--small{% if loop.first %} btn--accent{% endif %}" href="/assets/kit/{{ f.file }}" download>{% icon "download" %} {{ f.label }}</a>{% endfor %}</div>
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+
+  <h2 id="reseaux" style="margin-top:3rem">Pour les réseaux sociaux</h2>
+  <div class="kit">
+    {%- for k in kit.social %}
+    <article class="kit__item">
+      <div class="kit__img"><img src="/assets/kit/{{ k.file }}" alt="Visuel : {{ k.title }}" loading="lazy" width="{{ k.w }}" height="{{ k.h }}"></div>
+      <div class="kit__body">
+        <h3>{{ k.title }}</h3>
+        <p>{{ k.desc }}</p>
+        <div class="btnrow" style="margin-top:0.25rem"><a class="btn btn--small btn--accent" href="/assets/kit/{{ k.file }}" download>{% icon "download" %} Télécharger (PNG)</a></div>
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+
+  <h2 id="slogans" style="margin-top:3rem">Slogans pour tes pancartes</h2>
+  <p>Libres de droits, à reprendre tels quels ou à détourner. Les pancartes A3 du kit en reprennent plusieurs.</p>
+  <ul class="slogans">
+    {%- for s in kit.slogans %}<li>{{ s }}</li>{% endfor %}
+  </ul>
+
+  <h2 id="textes" style="margin-top:3rem">Textes prêts à copier</h2>
+  <div class="cards">
+    {%- for t in kit.texts %}
+    <div class="card">
+      <h3 class="card__title" style="font-size:1.15rem">{{ t.title }}</h3>
+      <p>{{ t.text }}</p>
+      <p style="margin-top:auto"><button type="button" class="chip" data-copy="{{ t.text }}">{% icon "copy" %} Copier le texte</button></p>
+    </div>
+    {%- endfor %}
+  </div>
+
+  {% callout "Conseils d'impression", "info" %}<p>Les PDF sont prêts à imprimer, sans marges perdues. Pour une affiche en vitrine, l'A3 se lit à plusieurs mètres. Le tract A5 s'imprime en recto-verso « bord court ». En noir et blanc, tout reste lisible.</p>{% endcallout %}
+</div>

@@ -1,0 +1,30 @@
+---
+layout: layouts/page.njk
+title: Ils disent, on répond
+heading: Ils disent… on répond.
+kicker: Contre-arguments
+headTone: ink
+lead: "Dix arguments qu'on entend pour justifier les mesures actuelles. Pour chacun, d'abord sa version la plus solide, honnêtement exposée. Ensuite, notre réponse, chiffres et sources à l'appui."
+description: "Déficit, longévité, compétitivité, chômage, légitimité électorale, violence : les arguments du gouvernement exposés honnêtement, et les réponses sourcées de la mobilisation."
+---
+<div class="wrap narrow">
+  <nav class="filters" aria-label="Arguments">
+    <div class="filters__group">
+      {%- for a in arguments %}<a class="chip" href="#{{ a.id }}">{{ loop.index }}</a>{% endfor %}
+    </div>
+  </nav>
+  <div class="args">
+    {%- for a in arguments %}
+    <article class="arg" id="{{ a.id }}">
+      <h2 class="arg__claim">{{ a.claim }}</h2>
+      <div class="arg__body">
+        <p class="arg__fair"><strong>L'argument, dans sa meilleure version :</strong> {{ a.fair }}</p>
+        <p class="arg__answer-title">Notre réponse</p>
+        {{ a.answer | safe }}
+        <p class="srcs">{% srcs a.sources | join(",") %}</p>
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+  {% include "partials/share.njk" %}
+</div>

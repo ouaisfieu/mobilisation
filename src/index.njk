@@ -1,0 +1,259 @@
+---
+layout: layouts/base.njk
+title: "Mobilisation · novembre 2026"
+description: "Lundi 23 novembre 2026, manifestation nationale en front commun à Bruxelles. Pourquoi y aller, ce qui se joue (salaires, pensions, chômage, écoles), l'argent qui existe, l'histoire des luttes et tout pour s'organiser."
+bodyClass: home
+---
+{%- set main = events | where("featured", true) | first %}
+<section class="hero" aria-labelledby="hero-titre">
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <p class="kicker">Manifestation nationale en front commun · CSC · FGTB · Synova</p>
+      <h1 class="hero__title" id="hero-titre">Lundi 23 novembre, <span class="hl">on remplit Bruxelles.</span></h1>
+      <p class="hero__lead">Salaires, pensions, chômage, écoles, services publics : le budget se décide maintenant, et le gouvernement vacille. Les trois syndicats appellent ensemble à une grande mobilisation citoyenne. Voici pourquoi on y va, et comment venir.</p>
+      <div class="btnrow">
+        <a class="btn btn--accent btn--big" href="/agir/">Je rejoins la mobilisation {% icon "arrow" %}</a>
+        <a class="btn btn--ghost btn--big" href="/enjeux/">Ce qui se joue</a>
+      </div>
+    </div>
+    <div class="hero__poster" aria-hidden="true">
+      <div class="poster">
+        <span class="poster__day">Lundi</span>
+        <span class="poster__num">23</span>
+        <span class="poster__month">novembre</span>
+        <span class="poster__city">Bruxelles</span>
+        <span class="poster__line">Front commun</span>
+        <div class="stripe stripe--thick"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap hero__bar" data-pagefind-ignore>
+    <div class="hero__count">
+      <p class="hero__countlabel">Il reste</p>
+      {% include "partials/countdown.njk" %}
+    </div>
+    <div class="hero__quick">
+      <a class="chip" href="/agenda/manif-nationale-23-novembre.ics" download>{% icon "calendar" %} Ajouter au calendrier</a>
+      <a class="chip" href="/agenda/">{% icon "pin" %} Heure et lieu : à confirmer</a>
+      <a class="chip" href="/mode-manif/">{% icon "wifi-off" %} Mode manif hors ligne</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight" aria-labelledby="chiffres-titre">
+  <div class="wrap">
+    <h2 class="sr-only" id="chiffres-titre">Les chiffres qui comptent</h2>
+    <ul class="stats">
+      <li class="stat">
+        <span class="stat__label">Inflation en octobre 2026</span>
+        <span class="stat__value">5,26 %</span>
+        <span class="stat__note">Du jamais vu depuis avril 2023, porté par l'énergie. Et des « adaptations de l'index » sont sur la table. {% src "te-inflation-oct" %}</span>
+      </li>
+      <li class="stat">
+        <span class="stat__label">Malus sur la pension : jusqu'à</span>
+        <span class="stat__value">−25 %</span>
+        <span class="stat__note">Pour un départ avant 67 ans sans 35 années « pleines ». Dès 2027, à vie. {% src "csc-temps-partiel" %}</span>
+      </li>
+      <li class="stat">
+        <span class="stat__label">Personnes en fin de droits au chômage</span>
+        <span class="stat__value">168 063</span>
+        <span class="stat__note">Selon l'ONEM, en février 2026, après la limitation des allocations dans le temps. {% src "lalibre-exclus" %}</span>
+      </li>
+      <li class="stat">
+        <span class="stat__label">Alternatives chiffrées par les syndicats</span>
+        <span class="stat__value">21,2 Md€</span>
+        <span class="stat__note">Pour assainir le budget sans faire payer celles et ceux qui travaillent. {% src "lalibre-alternatives" %}</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="enjeux-titre">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="kicker">Pourquoi le 23 ?</p>
+      <h2 class="section__title" id="enjeux-titre">Parce que tout se décide maintenant, et que ça nous concerne toutes et tous.</h2>
+    </div>
+    <div class="cards cards--3">
+      <a class="card card--link" href="/enjeux/#salaires">
+        <span class="card__icon">{% icon "wallet" %}</span>
+        <h3 class="card__title">Ton salaire</h3>
+        <p>L'indexation est rabotée en 2026 et 2028 pour les salaires au-dessus de 4 000 € brut, et un gel complet d'un an a été mis sur la table. Avec 5,26 % d'inflation.</p>
+        <span class="card__more">Calcule ta perte {% icon "arrow" %}</span>
+      </a>
+      <a class="card card--link" href="/enjeux/#pensions">
+        <span class="card__icon">{% icon "hourglass" %}</span>
+        <h3 class="card__title">Ta pension</h3>
+        <p>Malus jusqu'à 25 %, années qui ne comptent plus sous 156 jours de travail, fin de la péréquation dans le public. Les temps partiels et les femmes en première ligne.</p>
+        <span class="card__more">Simule ton malus {% icon "arrow" %}</span>
+      </a>
+      <a class="card card--link" href="/enjeux/#chomage">
+        <span class="card__icon">{% icon "users" %}</span>
+        <h3 class="card__title">Ton emploi, ton filet de sécurité</h3>
+        <p>Allocations de chômage limitées à deux ans, fin programmée de l'interdiction du travail de nuit, heures supplémentaires élargies, flexi-jobs dans tous les secteurs.</p>
+        <span class="card__more">Comprendre {% icon "arrow" %}</span>
+      </a>
+      <a class="card card--link" href="/enjeux/#ecole">
+        <span class="card__icon">{% icon "school" %}</span>
+        <h3 class="card__title">L'école et les jeunes</h3>
+        <p>Minerval en hausse, fin de l'abonnement TEC à 12 € pour les étudiant·es, conditions de travail des enseignant·es dégradées.</p>
+        <span class="card__more">Le 17 novembre aussi {% icon "arrow" %}</span>
+      </a>
+      <a class="card card--link" href="/enjeux/#sante">
+        <span class="card__icon">{% icon "hospital" %}</span>
+        <h3 class="card__title">Ta santé</h3>
+        <p>1,9 milliard d'économies visées sur les malades de longue durée, et de nouvelles coupes dans les soins de santé discutées pour 2027.</p>
+        <span class="card__more">Comprendre {% icon "arrow" %}</span>
+      </a>
+      <a class="card card--link" href="/enjeux/#libertes">
+        <span class="card__icon">{% icon "shield" %}</span>
+        <h3 class="card__title">Nos libertés</h3>
+        <p>Loi « casseur-payeur », interdiction de manifester, dissolution d'organisations par l'exécutif : le droit de contester est lui-même sous pression.</p>
+        <span class="card__more">Comprendre {% icon "arrow" %}</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ink" aria-labelledby="moment-titre">
+  <div class="wrap split">
+    <div>
+      <p class="kicker kicker--light">Le moment</p>
+      <h2 class="section__title" id="moment-titre">Le gouvernement est divisé sur une seule question : <em>qui paie ?</em></h2>
+      <p class="lead-light">Le 2 novembre, faute d'accord sur le budget, Bart De Wever a présenté sa démission. Le Roi l'a tenue en suspens. D'un côté, Vooruit, CD&amp;V et Les Engagés veulent faire contribuer « les épaules les plus larges » ; de l'autre, N-VA et MR refusent. C'est exactement le cœur de la mobilisation. Le 23 novembre, les arbitrages ne seront pas terminés : <strong>notre nombre pèsera dessus</strong>.</p>
+      <p><a class="btn btn--light" href="/analyses/le-moment-arizona/">Pourquoi maintenant : l'analyse {% icon "arrow" %}</a></p>
+    </div>
+    <ol class="minitl">
+      {%- for n in news | limit(5) %}
+      <li><span class="minitl__date">{{ n.date | dayMonth }}</span><span class="minitl__text">{{ n.title }}</span></li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="argent-titre">
+  <div class="wrap split split--wide-right">
+    <div>
+      <p class="kicker">L'argent existe</p>
+      <h2 class="section__title" id="argent-titre">« Il n'y a pas d'argent » ? Les syndicats ont trouvé 21,2 milliards.</h2>
+      <p>Le déficit est réel. La question, c'est qui paie. Le front commun a chiffré des alternatives qui mettent à contribution les revenus du capital, les niches fiscales et les gros patrimoines, plutôt que les salaires, les pensions et les malades.</p>
+      <p><a class="btn" href="/alternatives/">Voir les 21,2 milliards {% icon "arrow" %}</a></p>
+    </div>
+    <div>
+      {% segBar alternatives.wealth, { title: "Qui possède le patrimoine net des ménages belges ?", subtitle: "Part du patrimoine net total, fin 2024", source: "Source : Banque nationale de Belgique, comptes de patrimoine distributionnels.", id: "graph-patrimoine-accueil" } %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2" aria-labelledby="histoire-titre">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="kicker">Ce que la rue a gagné</p>
+      <h2 class="section__title" id="histoire-titre">Rien de ce qu'on défend aujourd'hui n'a été offert.</h2>
+      <p class="section__lead">Le droit de vote, la journée de 8 heures, les congés payés, la sécurité sociale : chaque fois, il a fallu des grèves et des manifestations.</p>
+    </div>
+    <ol class="milestones">
+      {%- for t in timeline | where("highlight", true) %}
+      <li class="milestone">
+        <span class="milestone__year">{{ t.year }}</span>
+        <h3 class="milestone__title">{{ t.title }}</h3>
+        <p>{{ t.resultText }}</p>
+      </li>
+      {%- endfor %}
+    </ol>
+    <p class="center"><a class="btn" href="/histoire/">Explorer 150 ans de luttes {% icon "arrow" %}</a></p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="agenda-titre">
+  <div class="wrap">
+    <div class="section__head section__head--row">
+      <div>
+        <p class="kicker">Agenda</p>
+        <h2 class="section__title" id="agenda-titre">Les rendez-vous de novembre</h2>
+      </div>
+      <a class="btn btn--small" href="/agenda/">Tout l'agenda {% icon "arrow" %}</a>
+    </div>
+    <div class="events">
+      {%- for ev in events %}{% include "partials/event-card.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2" aria-labelledby="agir-titre">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="kicker">Agir</p>
+      <h2 class="section__title" id="agir-titre">Tu as 5 minutes, une heure ou une journée ? Il y a de quoi faire.</h2>
+    </div>
+    <div class="cards cards--3">
+      <div class="card card--step">
+        <p class="card__step">5 minutes</p>
+        <ul class="ticks">
+          <li>Ajoute le 23 novembre à ton agenda</li>
+          <li>Partage ce site sur tes groupes</li>
+          <li>Signe la pétition du front commun</li>
+        </ul>
+      </div>
+      <div class="card card--step">
+        <p class="card__step">1 heure</p>
+        <ul class="ticks">
+          <li>Parles-en à trois collègues ou voisin·es</li>
+          <li>Imprime et affiche une affiche</li>
+          <li>Demande les départs collectifs à ta délégation</li>
+        </ul>
+      </div>
+      <div class="card card--step card--accent">
+        <p class="card__step">1 journée</p>
+        <ul class="ticks">
+          <li>Viens à Bruxelles le 23, avec ton groupe</li>
+          <li>Rejoins le 17 (enseignement) ou le 18 (Namur)</li>
+          <li>Et après : affilie-toi, organise-toi</li>
+        </ul>
+      </div>
+    </div>
+    <p class="center"><a class="btn btn--accent" href="/agir/">Le guide complet pour agir {% icon "arrow" %}</a></p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="faq-titre">
+  <div class="wrap narrow">
+    <div class="section__head">
+      <p class="kicker">Questions fréquentes</p>
+      <h2 class="section__title" id="faq-titre">Les questions qu'on se pose avant d'y aller</h2>
+    </div>
+    <div class="accordion">
+      {%- for item in faq | limit(5) %}
+      <details class="acc">
+        <summary class="acc__q">{{ item.q }}{% icon "chevron", "acc__chev" %}</summary>
+        <div class="acc__a">{{ item.a | safe }}</div>
+      </details>
+      {%- endfor %}
+    </div>
+    <p class="center"><a class="btn btn--small" href="/faq/">Toutes les questions {% icon "arrow" %}</a></p>
+    {% include "partials/share.njk" %}
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Manifestation nationale en front commun syndical",
+  "startDate": "2026-11-23",
+  "endDate": "2026-11-23",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": { "@type": "Place", "name": "Bruxelles", "address": { "@type": "PostalAddress", "addressLocality": "Bruxelles", "addressCountry": "BE" } },
+  "description": "Manifestation nationale à l'appel de la CSC, de la FGTB et de Synova contre l'austérité et pour une répartition juste des efforts.",
+  "organizer": [
+    { "@type": "Organization", "name": "CSC", "url": "https://www.lacsc.be/" },
+    { "@type": "Organization", "name": "FGTB", "url": "https://fgtb.be/" },
+    { "@type": "Organization", "name": "Synova", "url": "https://www.synova.be/fr/nouveau-nom" }
+  ],
+  "isAccessibleForFree": true,
+  "url": "{{ site.url }}agenda/#manif-nationale-23-novembre"
+}
+</script>

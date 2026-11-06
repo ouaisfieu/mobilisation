@@ -1,0 +1,81 @@
+---
+layout: layouts/page.njk
+title: L'argent existe
+heading: "« Il n'y a pas d'argent » ? Si. Il est juste ailleurs."
+kicker: Les alternatives · 21,2 milliards
+lead: "Le déficit est réel. La vraie question, celle qui a fait exploser la majorité début novembre, c'est : <strong>qui paie ?</strong> Le front commun syndical a chiffré 21,2 milliards d'euros d'alternatives qui ne passent ni par ton salaire, ni par ta pension."
+description: "Déficit, dette, patrimoine : les chiffres. Et les 21,2 milliards d'euros d'alternatives budgétaires chiffrées par le front commun syndical, mesure par mesure, plus la pétition pour une fiscalité juste."
+ogImage: og-alternatives.png
+---
+<div class="wrap">
+  <section class="section--tight" aria-labelledby="probleme">
+    <h2 id="probleme">D'abord, soyons honnêtes : le problème existe</h2>
+    <ul class="stats">
+      <li class="stat"><span class="stat__label">Déficit public 2025</span><span class="stat__value">5,2 % du PIB</span><span class="stat__note">Le plus élevé de la zone euro (moyenne : 2,9 %), soit environ 33 milliards d'euros. {% src "dh-deficit" %}</span></li>
+      <li class="stat"><span class="stat__label">Dette publique fin 2025</span><span class="stat__value">107,9 %</span><span class="stat__note">Du PIB, contre 103,9 % un an plus tôt. Moyenne de la zone euro : 87,8 %. {% src "dh-deficit" %}</span></li>
+      <li class="stat"><span class="stat__label">Objectif du gouvernement</span><span class="stat__value">10 Md€</span><span class="stat__note">D'efforts supplémentaires d'ici 2029, dont 3 à 4 milliards cherchés pour 2027. {% src "21news-tva" %}</span></li>
+    </ul>
+    <p class="section__lead" style="margin-top:1.5rem">Personne ne dit qu'il faut ignorer ces chiffres. Ce que les syndicats contestent, c'est le choix de faire porter l'effort sur les salaires, les pensions, les malades et les services publics, plutôt que sur ceux qui ont le plus.</p>
+  </section>
+
+  <section class="section" aria-labelledby="alt-titre">
+    <div class="split split--wide-right">
+      <div class="prose">
+        <p class="kicker">Les propositions du front commun</p>
+        <h2 id="alt-titre">21,2 milliards, mesure par mesure</h2>
+        <p>En avril 2026, la CSC, la FGTB et la CGSLB (aujourd'hui Synova) ont présenté un ensemble de mesures fiscales et parafiscales chiffrées. Selon eux, elles ne combleraient pas tout le déficit fédéral, mais le ramèneraient sous la barre des 3 % du PIB. {% src "lalibre-alternatives" %}</p>
+        <h3>La mesure phare : globaliser les revenus</h3>
+        <p>Aujourd'hui, ton salaire est taxé de façon progressive : plus tu gagnes, plus le taux monte. Les revenus du capital (dividendes, intérêts, loyers, plus-values) échappent largement à cette progressivité. <strong>Globaliser</strong>, c'est additionner tous les revenus d'une personne et leur appliquer le même barème. Le Bureau du Plan estime le rendement à <strong>12,9 milliards d'euros</strong>. {% src "lalibre-alternatives" %}</p>
+        <h3>Et le reste</h3>
+        <p>Fin des régimes de faveur des sociétés de management, cotisations sociales normales sur les voitures de société, les flexi-jobs et le travail étudiant, limitation des réductions de cotisations et des subsides salariaux aux entreprises dont l'efficacité n'est pas prouvée, fin du plafond des cotisations sociales des indépendant·es aux revenus élevés, prix juste des médicaments… {% src "lalibre-alternatives" %} {% src "csc-9oct" %}</p>
+      </div>
+      <div>
+        {% barH alternatives.items, { title: "Les alternatives budgétaires du front commun", subtitle: "Rendement annuel estimé, en euros", unit: "meur", total: true, source: "Source : front commun syndical, via La Libre (23 avril 2026). Estimations syndicales, sauf la globalisation (Bureau du Plan).", id: "graph-alternatives" } %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper2" aria-labelledby="richesse">
+    <div class="split">
+      <div class="prose">
+        <p class="kicker">La richesse est là</p>
+        <h2 id="richesse">Un pays riche, une richesse concentrée</h2>
+        <ul class="facts">
+          <li>Le patrimoine net médian d'un ménage belge atteint <strong>291 641 €</strong> fin 2024, presque le double de la médiane de la zone euro (152 480 €). {% src "forum-patrimoine" %}</li>
+          <li>Les <strong>10 % les plus riches</strong> détiennent <strong>54,9 %</strong> du patrimoine net ; les 50 % les moins riches, <strong>8,3 %</strong>. {% src "forum-patrimoine" %}</li>
+          <li>Le 1 % le plus riche détient environ <strong>22 %</strong> du patrimoine, autant que les 75 % les moins fortunés (données 2022, étude publiée par la Banque nationale). {% src "lalibre-1pct" %}</li>
+        </ul>
+        <p>Demander une contribution à ces patrimoines, ce n'est pas « taxer la classe moyenne » : c'est regarder où se trouve l'argent.</p>
+      </div>
+      <div>
+        {% segBar alternatives.wealth, { title: "Qui possède le patrimoine net des ménages ?", subtitle: "Part du patrimoine net total, Belgique, fin 2024", source: "Source : Banque nationale de Belgique (comptes de patrimoine distributionnels).", id: "graph-patrimoine" } %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="petition" aria-labelledby="petition-titre">
+    <div class="split">
+      <div class="prose">
+        <p class="kicker">Agir tout de suite</p>
+        <h2 id="petition-titre">La pétition pour une fiscalité juste</h2>
+        <p>Lancée le 23 avril 2026 par les trois syndicats sur la plateforme officielle de la Chambre, elle demande au Parlement de débattre de trois mesures : {% src "kairos-petition" %}</p>
+        <ol>
+          <li>un <strong>cadastre des fortunes</strong>, pour savoir enfin qui possède quoi ;</li>
+          <li>l'obligation de déclarer <strong>tous les revenus</strong> réellement perçus dans l'année ;</li>
+          <li>une fiscalité <strong>plus progressive</strong>, mieux équilibrée entre revenus du travail et du capital.</li>
+        </ol>
+        <p>À partir de <strong>25 000 signatures</strong>, la Chambre organise des auditions. Vérifie si la pétition est toujours ouverte et signe-la :</p>
+        <p><a class="btn btn--accent" href="https://dekamer.mijnopinie.belgium.be/initiatives/i-1307" rel="noopener" target="_blank">Signer la pétition sur le site de la Chambre {% icon "external" %}</a></p>
+      </div>
+      <div>
+        <div class="who">
+          <p class="who__title">La majorité elle-même est divisée</p>
+          <p>Le 2 novembre, le gouvernement n'a pas trouvé d'accord sur le budget. Vooruit, CD&amp;V et Les Engagés voulaient faire davantage contribuer « les épaules les plus larges » ; N-VA et MR s'y sont opposés. Le MR évoque plus de 3 milliards de recettes fiscales sur la table, un chiffre contesté par les autres partis. {% src "vrt-crise" %} {% src "bruzz-crise" %}</p>
+          <p>Autrement dit : la contribution des plus riches n'est pas une utopie syndicale, c'est le cœur du débat au gouvernement. La mobilisation du 23 peut faire pencher la balance.</p>
+        </div>
+        {% callout "Les objections, prises au sérieux", "info" %}<p>Certains économistes craignent que des taxes sur le capital rapportent moins que prévu, à cause de l'évitement fiscal. C'est justement pour ça que les syndicats demandent d'abord de la <strong>transparence</strong> (cadastre des fortunes, déclaration complète des revenus) et davantage d'inspecteurs. Le gouvernement lui-même a d'ailleurs doublé la taxe sur les comptes-titres et prévu la création d'un parquet financier dans son accord de novembre 2025 : preuve que ces leviers existent. {% src "rtbf-accord-2025" %}</p>{% endcallout %}
+      </div>
+    </div>
+  </section>
+  {% include "partials/share.njk" %}
+</div>

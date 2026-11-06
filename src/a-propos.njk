@@ -1,0 +1,43 @@
+---
+layout: layouts/page.njk
+title: À propos
+heading: Qui fait ce site, et comment
+kicker: À propos · méthode · vie privée
+lead: "Un site citoyen, indépendant, ouvert et vérifiable, pour que chacun·e puisse comprendre ce qui se joue et rejoindre la mobilisation."
+description: "Qui fait ce site, notre méthode de vérification, notre indépendance, la protection de ta vie privée, la licence libre et comment contribuer."
+hideCta: true
+---
+<div class="wrap narrow prose">
+  <h2 id="independance">Indépendant, et fier de l'être</h2>
+  <p>Ce site est une initiative <strong>citoyenne</strong>. Il n'est affilié à aucune organisation syndicale, à aucun parti, à aucune entreprise. Il soutient la mobilisation appelée par le front commun syndical (CSC, FGTB, Synova), mais ne parle pas en son nom. Pour toute information officielle — heure, parcours, départs collectifs, préavis — réfère-toi toujours aux organisations elles-mêmes.</p>
+
+  <h2 id="methode">Notre méthode</h2>
+  <ul>
+    <li><strong>Tout est sourcé.</strong> Chaque chiffre renvoie à une source publique, listée sur la page <a href="/sources/">Sources</a>.</li>
+    <li><strong>Les arguments adverses sont exposés honnêtement</strong>, dans leur meilleure version, avant d'y répondre (voir <a href="/arguments/">Ils disent, on répond</a>).</li>
+    <li><strong>Ce qui est incertain est dit incertain.</strong> Mesures « sur la table » mais non adoptées, estimations divergentes (police / organisateurs), modalités à confirmer : on le précise.</li>
+    <li><strong>Pas de témoignage inventé.</strong> Les cas chiffrés des simulateurs sont des calculs, pas des personnes.</li>
+    <li><strong>Les erreurs sont corrigées</strong> dès qu'elles sont signalées.</li>
+  </ul>
+  <p>État des informations : <strong>{{ site.updated | dateLong }}</strong>.</p>
+
+  <h2 id="vie-privee">Ta vie privée</h2>
+  <p>Aucun traceur, aucune mesure d'audience, aucune publicité, aucun cookie. Les polices sont hébergées sur le site, rien n'est chargé depuis un service tiers. La recherche et les simulateurs fonctionnent entièrement dans ton navigateur. Les seules données conservées sur ton appareil sont ton choix de thème (clair ou sombre) et l'état de tes check-lists du mode manif.</p>
+  <p>Les boutons de partage sont de simples liens : rien n'est transmis aux réseaux sociaux tant que tu ne cliques pas.</p>
+
+  <h2 id="technique">Sous le capot</h2>
+  <p>Le site est construit selon l'approche « JAMstack » : toutes les pages sont générées à l'avance avec <a href="https://www.11ty.dev/" rel="noopener">Eleventy</a> à partir de fichiers de données, puis servies telles quelles par GitHub Pages. Résultat : un site rapide, sobre, résistant aux pics de trafic, qui fonctionne même hors ligne pour les pages essentielles.</p>
+  <ul>
+    <li>Une <a href="/api/">API JSON ouverte</a> (agenda, chronologie, frise historique, sources…) que d'autres sites peuvent réutiliser.</li>
+    <li>Un <a href="/agenda.ics">agenda au format iCalendar</a> auquel s'abonner.</li>
+    <li>Un <a href="/feed.xml">flux d'actualités</a> (Atom).</li>
+    <li>Une recherche plein texte qui fonctionne sans serveur.</li>
+    <li>Une version installable sur téléphone (PWA), avec le <a href="/mode-manif/">mode manif</a> hors ligne.</li>
+  </ul>
+
+  <h2 id="licence">Licence libre</h2>
+  <p>Les textes et visuels sont publiés sous licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener license">Creative Commons BY-SA 4.0</a> : tu peux les copier, les imprimer, les adapter et les redistribuer, y compris dans ton organisation, en citant la source. Le code est sous licence MIT. Les polices (Archivo, Atkinson Hyperlegible Next, IBM Plex Mono) sont sous licence SIL Open Font License.</p>
+
+  <h2 id="contribuer">Contribuer</h2>
+  <p>Une erreur, une action locale à ajouter, une traduction à proposer ? Le code et les données sont sur <a href="{{ site.repo }}" rel="noopener">GitHub</a>. L'agenda, les actualités, la frise ou la FAQ sont de simples fichiers de données faciles à modifier.</p>
+</div>

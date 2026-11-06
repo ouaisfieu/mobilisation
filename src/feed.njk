@@ -1,0 +1,23 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr">
+  <title>Mobilisation · novembre 2026 — actualités</title>
+  <subtitle>{{ site.description | escapeXml }}</subtitle>
+  <link href="{{ 'feed.xml' | absUrl(site.url) }}" rel="self"/>
+  <link href="{{ site.url }}"/>
+  <id>{{ site.url }}</id>
+  <updated>{{ site.updated | isoDate }}</updated>
+  <author><name>Mobilisation — site citoyen indépendant</name></author>
+  {%- for n in news %}
+  <entry>
+    <title>{{ n.title | escapeXml }}</title>
+    <link href="{{ ('actualites/#' + n.date) | absUrl(site.url) }}"/>
+    <id>{{ ('actualites/#' + n.date + '-' + (n.title | slug)) | absUrl(site.url) }}</id>
+    <updated>{{ (n.date + 'T12:00:00+01:00') | isoDate }}</updated>
+    <content type="html">{{ ('<p>' + n.text + '</p>') | escapeXml }}</content>
+  </entry>
+  {%- endfor %}
+</feed>

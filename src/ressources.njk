@@ -1,0 +1,38 @@
+---
+layout: layouts/page.njk
+title: Ressources
+heading: Pour aller plus loin
+kicker: Ressources · lire, voir, comprendre
+lead: "Les sites officiels, les centres d'archives et de recherche, les livres et les films pour comprendre la contestation sociale et l'histoire des droits."
+description: "Ressources pour comprendre les luttes sociales : syndicats, archives (CARHOP, CRISP, Amsab), livres (Piven, Chenoweth, Tilly, Luxemburg, Hirschman, McAlevey, Piketty) et films."
+---
+<div class="wrap">
+  <h2 id="officiel">Sites officiels et services utiles</h2>
+  <ul class="reslist">
+    {%- for r in resources.official %}
+    <li><a class="res__title" href="{{ r.url }}" rel="noopener">{{ r.name }}</a><p>{{ r.desc }}</p></li>
+    {%- endfor %}
+  </ul>
+
+  <h2 id="archives">Archives et recherche</h2>
+  <ul class="reslist">
+    {%- for r in resources.archives %}
+    <li><a class="res__title" href="{{ r.url }}" rel="noopener">{{ r.name }}</a><p>{{ r.desc }}</p></li>
+    {%- endfor %}
+  </ul>
+
+  <h2 id="livres">Livres</h2>
+  <ul class="reslist">
+    {%- for b in resources.books %}
+    <li><span class="res__title">{{ b.title }}</span><span class="res__meta">{{ b.author }}, {{ b.year }}</span><p>{{ b.why }}</p></li>
+    {%- endfor %}
+  </ul>
+
+  <h2 id="films">Films</h2>
+  <ul class="reslist">
+    {%- for f in resources.films %}
+    <li><span class="res__title">{{ f.title }}</span><span class="res__meta">{{ f.who }}, {{ f.year }}</span><p>{{ f.why }}</p></li>
+    {%- endfor %}
+  </ul>
+  <p>Toutes les sources citées sur le site sont listées sur la page <a href="/sources/">Sources</a>.</p>
+</div>
